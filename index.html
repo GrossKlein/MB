@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Bleich &amp; EntryPoint Capital: The Phantom Shares — $578M Fund, $3M FINRA Fine, 295M Phantom Shares</title>
+<meta name="description" content="Investigative report on Michael Edward Bleich (CRD# 4262671), CIO of EntryPoint Capital. $3M FINRA fine for naked short selling, 295 million phantom shares, and a disclosure gap behind $578M in institutional assets.">
+<meta property="og:title" content="The Phantom Shares: Michael Bleich &amp; EntryPoint Capital">
+<meta property="og:description" content="How Lehman Brothers veteran Michael Bleich built a $578M fund after a $3M naked short selling scandal — and why his investors may not know.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-03-01">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "The Phantom Shares: How Michael Bleich Built a $578 Million Fund on the Ashes of a $3 Million Naked Short Selling Scandal",
+  "datePublished": "2026-03-01",
+  "description": "Investigative report on Michael Edward Bleich (CRD# 4262671), CIO of EntryPoint Capital.",
+  "about": [
+    {
+      "@type": "Person",
+      "name": "Michael Edward Bleich",
+      "identifier": "CRD# 4262671",
+      "jobTitle": "Chief Investment Officer",
+      "worksFor": { "@type": "Organization", "name": "EntryPoint Capital, LLC" }
+    },
+    {
+      "@type": "Organization",
+      "name": "EntryPoint Capital, LLC",
+      "identifier": "CRD# 313946"
+    }
+  ]
+}
+</script>
+<style>
+/* ============================================
+   CSS CUSTOM PROPERTIES — THEME SYSTEM
+   ============================================ */
+:root {
+  /* Light theme (default) */
+  --bg-primary: #FAFAF7;
+  --bg-secondary: #F3F1EB;
+  --bg-tertiary: #EBE8E0;
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --text-tertiary: #6B6B6B;
+  --accent-red: #B81C1C;
+  --accent-red-bg: rgba(184, 28, 28, 0.06);
+  --accent-gold: #8B7225;
+  --accent-gold-bg: rgba(139, 114, 37, 0.06);
+  --accent-moderate: #5A6B3C;
+  --accent-moderate-bg: rgba(90, 107, 60, 0.06);
+  --rule-color: #2A2A2A;
+  --rule-light: #D5D0C6;
+  --evidence-bg: #F0EDE6;
+  --evidence-border: #C9C3B5;
+  --mono-color: #4A5568;
+  --card-bg: #FFFFFF;
+  --card-border: #D5D0C6;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --nav-bg: rgba(250, 250, 247, 0.92);
+  --nav-dot: #C9C3B5;
+  --nav-dot-active: #B81C1C;
+  --progress-bg: rgba(0,0,0,0.06);
+  --progress-fill: #B81C1C;
+  --blockquote-border: #B81C1C;
+  --table-header-bg: #1A1A1A;
+  --table-header-text: #FAFAF7;
+  --table-stripe: #F7F5F0;
+  --table-border: #D5D0C6;
+  --toggle-bg: #E8E5DD;
+  --toggle-icon: #4A4A4A;
+  --footer-bg: #1A1A1A;
+  --footer-text: #A0A0A0;
+  --footer-heading: #E8E6E1;
+  --stat-number: #B81C1C;
+  --photo-placeholder-bg: #E8E5DD;
+  --photo-placeholder-border: #C9C3B5;
+  --severity-critical: #B81C1C;
+  --severity-high: #8B7225;
+  --severity-moderate: #5A6B3C;
+  --badge-critical-bg: rgba(184, 28, 28, 0.1);
+  --badge-high-bg: rgba(139, 114, 37, 0.1);
+  --badge-moderate-bg: rgba(90, 107, 60, 0.1);
+  --hero-overlay: rgba(250, 250, 247, 0.0);
+  --texture-opacity: 0.03;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0F0F0F;
+  --bg-secondary: #161614;
+  --bg-tertiary: #1E1D1A;
+  --text-primary: #E8E6E1;
+  --text-secondary: #B0ADA5;
+  --text-tertiary: #7A7770;
+  --accent-red: #E63946;
+  --accent-red-bg: rgba(230, 57, 70, 0.08);
+  --accent-gold: #D4A843;
+  --accent-gold-bg: rgba(212, 168, 67, 0.08);
+  --accent-moderate: #8BA85E;
+  --accent-moderate-bg: rgba(139, 168, 94, 0.08);
+  --rule-color: #3A3A3A;
+  --rule-light: #2A2825;
+  --evidence-bg: #1A1916;
+  --evidence-border: #33302A;
+  --mono-color: #8B95A5;
+  --card-bg: #161614;
+  --card-border: #2A2825;
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --nav-bg: rgba(15, 15, 15, 0.92);
+  --nav-dot: #3A3A3A;
+  --nav-dot-active: #E63946;
+  --progress-bg: rgba(255,255,255,0.06);
+  --progress-fill: #E63946;
+  --blockquote-border: #E63946;
+  --table-header-bg: #1E1D1A;
+  --table-header-text: #E8E6E1;
+  --table-stripe: #141312;
+  --table-border: #2A2825;
+  --toggle-bg: #2A2825;
+  --toggle-icon: #B0ADA5;
+  --footer-bg: #080808;
+  --footer-text: #6B6B6B;
+  --footer-heading: #B0ADA5;
+  --stat-number: #E63946;
+  --photo-placeholder-bg: #1E1D1A;
+  --photo-placeholder-border: #33302A;
+  --severity-critical: #E63946;
+  --severity-high: #D4A843;
+  --severity-moderate: #8BA85E;
+  --badge-critical-bg: rgba(230, 57, 70, 0.12);
+  --badge-high-bg: rgba(212, 168, 67, 0.12);
+  --badge-moderate-bg: rgba(139, 168, 94, 0.12);
+  --texture-opacity: 0.015;
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  line-height: 1.72;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Paper texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: var(--texture-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 256px;
+}
+
+a { color: var(--accent-red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Skip to content */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-red);
+  color: #fff;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  z-index: 10001;
+  border-radius: 0 0 4px 4px;
+}
+.skip-link:focus { top: 0; }
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-weight: 500;
+  color: var(--mono-color);
+}
+
+.mono-num {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  color: var(--stat-number);
+  letter-spacing: -0.02em;
+}
+
+/* ============================================
+   PROGRESS BAR
+   ============================================ */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--progress-fill);
+  z-index: 10000;
+  transition: width 0.1s linear;
+}
+
+/* ============================================
+   THEME TOGGLE
+   ============================================ */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9998;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-light);
+  background: var(--toggle-bg);
+  color: var(--toggle-icon);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.theme-toggle:hover { transform: scale(1.08); }
+.theme-toggle:active { transform: scale(0.95); }
+.theme-toggle svg { width: 20px; height: 20px; fill: currentColor; }
+
+/* ============================================
+   SIDE NAVIGATION (Desktop)
+   ============================================ */
+.side-nav {
+  position: fixed;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9997;
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.side-nav.visible { opacity: 1; }
+.side-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-tertiary);
+  transition: color 0.2s;
+}
+.side-nav-item:hover { color: var(--text-primary); text-decoration: none; }
+.side-nav-item.active { color: var(--accent-red); }
+.side-nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--nav-dot);
+  flex-shrink: 0;
+  transition: background 0.3s, transform 0.2s;
+}
+.side-nav-item.active .side-nav-dot {
+  background: var(--nav-dot-active);
+  transform: scale(1.4);
+}
+.side-nav-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+.side-nav-item:hover .side-nav-label,
+.side-nav-item.active .side-nav-label {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   MOBILE NAVIGATION
+   ============================================ */
+.mobile-nav-toggle {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9998;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-light);
+  background: var(--nav-bg);
+  color: var(--text-primary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.2s;
+}
+.mobile-nav-toggle:active { transform: scale(0.92); }
+
+.mobile-nav-drawer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: var(--nav-bg);
+  border-top: 1px solid var(--rule-light);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 1rem 1.25rem 2rem;
+  transform: translateY(100%);
+  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+  max-height: 70vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 16px 16px 0 0;
+}
+.mobile-nav-drawer.open { transform: translateY(0); }
+.mobile-nav-drawer a {
+  display: block;
+  padding: 0.6rem 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule-light);
+  letter-spacing: 0.02em;
+}
+.mobile-nav-drawer a:last-child { border-bottom: none; }
+.mobile-nav-drawer a.active { color: var(--accent-red); }
+.mobile-nav-drawer a:hover { color: var(--text-primary); }
+.drawer-close {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.drawer-handle {
+  width: 36px;
+  height: 4px;
+  background: var(--rule-light);
+  border-radius: 2px;
+}
+
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.mobile-nav-overlay.open { opacity: 1; }
+
+/* Back to top */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1rem;
+  z-index: 9997;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-light);
+  background: var(--nav-bg);
+  color: var(--text-secondary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.2s;
+}
+.back-to-top.visible { opacity: 1; }
+.back-to-top:active { transform: scale(0.92); }
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+.container {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+.section:last-of-type { border-bottom: none; }
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6rem 0 4rem;
+  border-bottom: 3px double var(--rule-color);
+  position: relative;
+}
+.hero-dateline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 2rem + 2.5vw, 4.2rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+.hero-subtitle {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 0.75rem;
+}
+.hero-subtitle-secondary {
+  font-family: 'Source Serif 4', serif;
+  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.1rem);
+  font-style: italic;
+  color: var(--text-tertiary);
+  margin-bottom: 2.5rem;
+}
+.hero-subject-line {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule-light);
+}
+.hero-subject-line strong {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* ============================================
+   STAT CALLOUTS
+   ============================================ */
+.stat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 2.5rem 0;
+}
+.stat-box {
+  padding: 1.25rem;
+  border: 1px solid var(--rule-light);
+  background: var(--card-bg);
+}
+.stat-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(1.6rem, 1.4rem + 1vw, 2.2rem);
+  font-weight: 600;
+  color: var(--stat-number);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.02em;
+}
+.stat-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+}
+
+/* Violation metrics — compact 4x2 grid */
+.violation-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 2rem 0;
+  border: 1px solid var(--rule-light);
+}
+.vm-cell {
+  padding: 1rem 0.75rem;
+  text-align: center;
+  border-right: 1px solid var(--rule-light);
+  border-bottom: 1px solid var(--rule-light);
+  background: var(--card-bg);
+}
+.vm-cell:nth-child(4),
+.vm-cell:nth-child(8) { border-right: none; }
+.vm-cell:nth-child(n+5) { border-bottom: none; }
+.vm-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+  font-weight: 600;
+  color: var(--stat-number);
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+.vm-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+}
+@media (max-width: 480px) {
+  .violation-metrics { grid-template-columns: repeat(2, 1fr); }
+  .vm-cell:nth-child(2),
+  .vm-cell:nth-child(4),
+  .vm-cell:nth-child(6),
+  .vm-cell:nth-child(8) { border-right: none; }
+  .vm-cell:nth-child(n+5) { border-bottom: 1px solid var(--rule-light); }
+  .vm-cell:nth-child(n+7) { border-bottom: none; }
+}
+
+/* Enforcement total bar */
+.enforcement-total {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin: 1.5rem 0 2rem;
+  border: 2px solid var(--accent-red);
+}
+.et-cell {
+  padding: 0.9rem 0.75rem;
+  text-align: center;
+  border-right: 1px solid var(--rule-light);
+  background: var(--accent-red-bg);
+}
+.et-cell:last-child { border-right: none; }
+.et-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  font-weight: 600;
+  color: var(--accent-red);
+  line-height: 1.2;
+  margin-bottom: 0.15rem;
+}
+.et-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 400px) {
+  .enforcement-total { grid-template-columns: 1fr; }
+  .et-cell { border-right: none; border-bottom: 1px solid var(--rule-light); }
+  .et-cell:last-child { border-bottom: none; }
+}
+
+/* Cayman architecture table */
+.arch-table {
+  margin: 2rem 0;
+  border: 1px solid var(--table-border);
+}
+.arch-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.arch-table th {
+  background: var(--table-header-bg);
+  color: var(--table-header-text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+}
+.arch-table td {
+  padding: 0.55rem 0.7rem;
+  border-bottom: 1px solid var(--table-border);
+  vertical-align: top;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+}
+.arch-table tr:nth-child(even) td { background: var(--table-stripe); }
+
+/* AUM quarterly row */
+.aum-quarters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 1.5rem 0;
+  border: 1px solid var(--rule-light);
+}
+.aq-cell {
+  padding: 0.9rem 0.5rem;
+  text-align: center;
+  border-right: 1px solid var(--rule-light);
+  background: var(--card-bg);
+}
+.aq-cell:last-child { border-right: none; }
+.aq-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.15rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+.aq-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 400px) {
+  .aum-quarters { grid-template-columns: repeat(2, 1fr); }
+  .aq-cell:nth-child(2) { border-right: none; }
+  .aq-cell:nth-child(1), .aq-cell:nth-child(2) { border-bottom: 1px solid var(--rule-light); }
+}
+
+/* ============================================
+   PROFILE CARDS
+   ============================================ */
+.profile-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.profile-card {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+}
+.profile-photo {
+  width: 120px;
+  height: 150px;
+  background: var(--photo-placeholder-bg);
+  border: 1px dashed var(--photo-placeholder-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.profile-photo-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.profile-photo svg {
+  width: 28px;
+  height: 28px;
+  stroke: var(--text-tertiary);
+  fill: none;
+  stroke-width: 1.5;
+}
+.profile-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+.profile-role {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+.profile-detail {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+.profile-detail strong {
+  color: var(--text-primary);
+  font-weight: 600;
+  display: inline-block;
+  min-width: 70px;
+}
+.profile-highlight {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule-light);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-red);
+  line-height: 1.6;
+}
+
+/* ============================================
+   SECTION HEADINGS
+   ============================================ */
+.section-heading {
+  margin-bottom: 0.4rem;
+}
+.section-heading h2 {
+  font-size: clamp(1.7rem, 1.5rem + 1.2vw, 2.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.6rem;
+}
+.section-dek {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.section-body p {
+  margin-bottom: 1.25rem;
+}
+.section-body p:last-child { margin-bottom: 0; }
+
+/* ============================================
+   EVIDENCE BOXES
+   ============================================ */
+.evidence-box {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  background: var(--evidence-bg);
+  border-left: 3px solid var(--evidence-border);
+}
+.evidence-box-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  margin-bottom: 0.6rem;
+}
+.evidence-box p {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   BLOCKQUOTES
+   ============================================ */
+blockquote {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--blockquote-border);
+  font-style: italic;
+  color: var(--text-secondary);
+  background: var(--accent-red-bg);
+}
+blockquote cite {
+  display: block;
+  margin-top: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--text-tertiary);
+}
+
+/* ============================================
+   PULL QUOTES
+   ============================================ */
+.pull-quote {
+  margin: 2.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 2px solid var(--rule-color);
+  border-bottom: 2px solid var(--rule-color);
+}
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.15rem, 1rem + 0.5vw, 1.4rem);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+/* ============================================
+   DATA TABLES
+   ============================================ */
+.table-wrapper {
+  margin: 2rem 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--table-border);
+}
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  min-width: 580px;
+}
+.table-wrapper th {
+  background: var(--table-header-bg);
+  color: var(--table-header-text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  white-space: nowrap;
+}
+.table-wrapper td {
+  padding: 0.65rem 0.9rem;
+  border-bottom: 1px solid var(--table-border);
+  vertical-align: top;
+}
+.table-wrapper tr:nth-child(even) td {
+  background: var(--table-stripe);
+}
+
+/* Severity badges in tables */
+.severity {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  white-space: nowrap;
+  display: inline-block;
+}
+.severity-critical { background: var(--badge-critical-bg); color: var(--severity-critical); }
+.severity-high { background: var(--badge-high-bg); color: var(--severity-high); }
+.severity-moderate { background: var(--badge-moderate-bg); color: var(--severity-moderate); }
+
+/* Severity summary badges */
+.severity-summary {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0 2rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.severity-summary span {
+  padding: 0.35rem 0.75rem;
+  border-radius: 2px;
+}
+.severity-summary .sc { background: var(--badge-critical-bg); color: var(--severity-critical); }
+.severity-summary .sh { background: var(--badge-high-bg); color: var(--severity-high); }
+.severity-summary .sm { background: var(--badge-moderate-bg); color: var(--severity-moderate); }
+
+/* ============================================
+   ENTITY TIMELINE (Dissolution Pattern)
+   ============================================ */
+.entity-timeline {
+  margin: 2.5rem 0;
+  padding: 0;
+  position: relative;
+}
+.entity-timeline::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--rule-light);
+}
+.entity-timeline-items {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  gap: 0;
+  padding-bottom: 0.5rem;
+}
+.entity-item {
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  padding-top: 2.5rem;
+}
+.entity-item::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-red);
+  background: var(--bg-primary);
+  z-index: 1;
+}
+.entity-item.defunct::before { background: var(--accent-red); }
+.entity-item.active::before { background: var(--accent-gold); border-color: var(--accent-gold); }
+.entity-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+.entity-dates {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--text-tertiary);
+  margin-bottom: 0.15rem;
+}
+.entity-crd {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  color: var(--mono-color);
+}
+.entity-status {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+.entity-status.defunct { color: var(--accent-red); }
+.entity-status.active { color: var(--accent-gold); }
+
+/* Arrow connectors */
+.entity-arrow {
+  flex: 0 0 auto;
+  width: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 19px;
+  color: var(--text-tertiary);
+  font-size: 1rem;
+}
+
+/* ============================================
+   TWO-COLUMN COMPARISON
+   ============================================ */
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.comparison-col {
+  padding: 1.25rem;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+}
+.comparison-col h4 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--rule-light);
+}
+.comparison-col.against h4 { border-bottom-color: var(--accent-red); color: var(--accent-red); }
+.comparison-col.for h4 { border-bottom-color: var(--accent-gold); color: var(--accent-gold); }
+.comparison-col p, .comparison-col li {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+.comparison-col ul {
+  list-style: none;
+  padding: 0;
+}
+.comparison-col li {
+  padding: 0.35rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+.comparison-col li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-tertiary);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 3.5rem 0 2rem;
+}
+.footer-section {
+  margin-bottom: 2.5rem;
+}
+.footer-section:last-child { margin-bottom: 0; }
+.footer-heading {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--footer-heading);
+  margin-bottom: 1rem;
+}
+.footer-section p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: var(--footer-text);
+}
+.footer-sources {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.68rem;
+  line-height: 2;
+  color: var(--footer-text);
+}
+.footer-colophon {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #2A2A2A;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  color: #555;
+  letter-spacing: 0.04em;
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.08s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.16s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.24s; }
+
+/* Counter animation — typewriter style */
+.counter-animate {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ============================================
+   RESPONSIVE — MOBILE FIRST
+   ============================================ */
+
+/* Small phones (320px+) — base styles above */
+
+/* Standard phones (375px+) */
+@media (min-width: 375px) {
+  .container { padding: 0 1.5rem; }
+  .stat-grid { gap: 1rem; }
+}
+
+/* Large phones (428px+) */
+@media (min-width: 428px) {
+  .profile-card {
+    grid-template-columns: 130px 1fr;
+  }
+}
+
+/* Tablets (768px+) */
+@media (min-width: 768px) {
+  .container { padding: 0 2rem; }
+  .section { padding: 5rem 0; }
+  .hero { padding: 8rem 0 5rem; }
+  .stat-grid { grid-template-columns: repeat(4, 1fr); }
+  .profile-cards { grid-template-columns: 1fr 1fr; }
+  .profile-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .profile-photo {
+    margin: 0 auto;
+  }
+  .profile-detail strong { min-width: 0; }
+}
+
+/* Laptops (1024px+) */
+@media (min-width: 1024px) {
+  .container { max-width: 720px; }
+  .side-nav { display: flex; }
+  .mobile-nav-toggle { display: none !important; }
+  .back-to-top { display: none !important; }
+  .hero { min-height: 100vh; }
+}
+
+/* Desktops (1280px+) */
+@media (min-width: 1280px) {
+  .container { max-width: 760px; }
+  .side-nav { left: 2rem; }
+}
+
+/* Ultra-wide (1600px+) */
+@media (min-width: 1600px) {
+  .side-nav { left: calc((100vw - 760px) / 2 - 180px); }
+}
+
+/* Below 1024px — mobile nav */
+@media (max-width: 1023px) {
+  .mobile-nav-toggle { display: flex; }
+  .mobile-nav-drawer { display: block; }
+  .mobile-nav-overlay { display: block; }
+  .back-to-top { display: flex; }
+}
+
+/* Very small screens (Galaxy Fold) */
+@media (max-width: 320px) {
+  .container { padding: 0 1rem; }
+  .stat-grid { grid-template-columns: 1fr; }
+  .comparison { grid-template-columns: 1fr; }
+  .profile-card { grid-template-columns: 1fr; }
+  .profile-photo { width: 100%; height: 120px; }
+  .hero h1 { font-size: 1.9rem; }
+}
+
+/* Comparison columns stack on small screens */
+@media (max-width: 600px) {
+  .comparison { grid-template-columns: 1fr; }
+}
+
+/* Safe area insets for notched phones */
+@supports (padding: max(0px)) {
+  .mobile-nav-drawer {
+    padding-bottom: max(2rem, env(safe-area-inset-bottom));
+  }
+  .mobile-nav-toggle {
+    bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+  .back-to-top {
+    bottom: max(4.5rem, calc(env(safe-area-inset-bottom) + 3.5rem));
+  }
+}
+
+/* Landscape phone */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: auto; padding: 3rem 0; }
+  .mobile-nav-drawer { max-height: 60vh; }
+}
+
+/* Print */
+@media print {
+  .progress-bar, .theme-toggle, .side-nav, .mobile-nav-toggle,
+  .mobile-nav-drawer, .mobile-nav-overlay, .back-to-top { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .section { break-inside: avoid; page-break-inside: avoid; }
+  body::before { display: none; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<!-- Progress Bar -->
+<div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark/light theme">
+  <svg id="themeIconSun" viewBox="0 0 24 24" style="display:none;"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+  <svg id="themeIconMoon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+</button>
+
+<!-- Side Navigation (Desktop) -->
+<nav class="side-nav" id="sideNav" aria-label="Section navigation">
+  <a href="#hero" class="side-nav-item active" data-section="hero"><span class="side-nav-dot"></span><span class="side-nav-label">Top</span></a>
+  <a href="#profiles" class="side-nav-item" data-section="profiles"><span class="side-nav-dot"></span><span class="side-nav-label">Subjects</span></a>
+  <a href="#prologue" class="side-nav-item" data-section="prologue"><span class="side-nav-dot"></span><span class="side-nav-label">$578M Question</span></a>
+  <a href="#chapter-1" class="side-nav-item" data-section="chapter-1"><span class="side-nav-dot"></span><span class="side-nav-label">Lehman Years</span></a>
+  <a href="#chapter-2" class="side-nav-item" data-section="chapter-2"><span class="side-nav-dot"></span><span class="side-nav-label">Scout Trading</span></a>
+  <a href="#chapter-3" class="side-nav-item" data-section="chapter-3"><span class="side-nav-dot"></span><span class="side-nav-label">Dissolution</span></a>
+  <a href="#chapter-4" class="side-nav-item" data-section="chapter-4"><span class="side-nav-dot"></span><span class="side-nav-label">Disclosure Gap</span></a>
+  <a href="#chapter-5" class="side-nav-item" data-section="chapter-5"><span class="side-nav-dot"></span><span class="side-nav-label">Governance</span></a>
+  <a href="#chapter-6" class="side-nav-item" data-section="chapter-6"><span class="side-nav-dot"></span><span class="side-nav-label">Debt Chain</span></a>
+  <a href="#chapter-7" class="side-nav-item" data-section="chapter-7"><span class="side-nav-dot"></span><span class="side-nav-label">Lawyers</span></a>
+  <a href="#red-flags" class="side-nav-item" data-section="red-flags"><span class="side-nav-dot"></span><span class="side-nav-label">Red Flags</span></a>
+  <a href="#verdict" class="side-nav-item" data-section="verdict"><span class="side-nav-dot"></span><span class="side-nav-label">Verdict</span></a>
+  <a href="#methodology" class="side-nav-item" data-section="methodology"><span class="side-nav-dot"></span><span class="side-nav-label">Sources</span></a>
+</nav>
+
+<!-- Mobile Nav Toggle -->
+<button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open navigation menu" aria-expanded="false">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+</button>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+<!-- Mobile Nav Drawer -->
+<nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Section navigation">
+  <div class="drawer-close"><div class="drawer-handle"></div></div>
+  <a href="#hero">Top</a>
+  <a href="#profiles">Subject Profiles</a>
+  <a href="#prologue">Bleich's $578 Million Question</a>
+  <a href="#chapter-1">Bleich at Lehman Brothers</a>
+  <a href="#chapter-2">Scout Trading Machine</a>
+  <a href="#chapter-3">The Dissolution Pattern</a>
+  <a href="#chapter-4">The Disclosure Gap</a>
+  <a href="#chapter-5">The Governance Question</a>
+  <a href="#chapter-6">The Debt Chain</a>
+  <a href="#chapter-7">Bleich's Lawyers</a>
+  <a href="#red-flags">Red Flag Compendium</a>
+  <a href="#verdict">The Case For and Against</a>
+  <a href="#methodology">Methodology &amp; Sources</a>
+</nav>
+
+<!-- ============================================
+     MAIN CONTENT
+     ============================================ -->
+<main id="main-content">
+
+<!-- HERO -->
+<section class="hero section" id="hero">
+<div class="container">
+  <div class="hero-dateline reveal">An Investigative Report &middot; March 2026</div>
+  <h1 class="reveal">The Phantom Shares</h1>
+  <p class="hero-subtitle reveal">How a Lehman Brothers Veteran Built a $578&nbsp;Million Fund on the Ashes of a $3&nbsp;Million Naked Short Selling Scandal</p>
+  <p class="hero-subtitle-secondary reveal">&mdash; and Why His Investors May Not Know</p>
+  <div class="hero-subject-line reveal">
+    <strong>Subject:</strong> Michael Edward Bleich (CRD# 4262671), Chief Investment Officer, EntryPoint Capital, LLC<br>
+    <strong>Entities:</strong> <a href="https://entrypointcap.com/" target="_blank" rel="noopener" title="EntryPoint Capital website">EntryPoint Capital</a> (CRD# 313946) &bull; <a href="https://files.brokercheck.finra.org/firm/firm_151990.pdf" target="_blank" rel="noopener" title="FINRA BrokerCheck — Scout Trading">Scout Trading</a> (CRD# 151990) &bull; Ophir Partners (CRD# 164729)
+  </div>
+</div>
+</section>
+
+<!-- SUBJECT PROFILES -->
+<section class="section" id="profiles">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Subject Profiles</h2>
+  </div>
+  <div class="section-dek reveal">Compiled from FINRA BrokerCheck, SEC IAPD, The New York Times, California state licensing records, and court filings.</div>
+
+  <div class="profile-cards reveal-stagger">
+    <!-- Bleich Profile -->
+    <div class="profile-card reveal">
+      <div class="profile-photo">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="profile-photo-label">Insert Photo</span>
+      </div>
+      <div class="profile-info">
+        <h3><a href="https://www.zoominfo.com/p/Michael-Bleich/12107508341" target="_blank" rel="noopener" title="ZoomInfo profile">Michael Edward Bleich</a></h3>
+        <p class="profile-role">Chief Investment Officer &amp; Indirect Owner, EntryPoint Capital, LLC</p>
+        <div class="profile-detail">
+          <strong>CRD#</strong> 4262671<br>
+          <strong>DOB</strong> c.&nbsp;1971<br>
+          <strong>Education</strong> PhD, Theoretical Physics, Duke University (1997)<br>
+          <strong>Residence</strong> <a href="https://radaris.com/~Michael-Bleich/1682114236" target="_blank" rel="noopener" title="Radaris public records">13 Harrison St, Unit 1, New York, NY 10013</a><br>
+          <strong>Career</strong> Lehman Brothers &rarr; Scout Trading &rarr; Ophir Partners &rarr; EntryPoint Capital
+        </div>
+        <div class="profile-highlight">
+          $3,000,000 in <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading">FINRA penalties</a> &bull; Three <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE fines</a> &bull; $2.2M <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH default</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alexis Profile -->
+    <div class="profile-card reveal">
+      <div class="profile-photo">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="profile-photo-label">Insert Photo</span>
+      </div>
+      <div class="profile-info">
+        <h3>Alexis Kate Kaminsky Bleich</h3>
+        <p class="profile-role">Licensed Clinical Social Worker &bull; Co-Plaintiff in 155721/2024</p>
+        <div class="profile-detail">
+          <strong>Education</strong> B.A. Stanford (with distinction); M.A. Columbia; M.S.W. NYU<br>
+          <strong>Licenses</strong> LCSW — NY, NJ, MA, CT, NH, MN<br>
+          <strong>Practice</strong> <a href="https://maps.app.goo.gl/TpXvdeScYPaxWei3A" target="_blank" rel="noopener" title="Google Maps — 225 Broadway, Suite 2070">225 Broadway, Suite 2070, New York, NY</a><br>
+          <strong>Father</strong> Arthur C. Kaminsky (1946–2013), pioneering sports agent
+        </div>
+        <div class="profile-highlight">
+          Co-signatory on $2,233,007 <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH LLC promissory note</a> &bull; Co-plaintiff in pending condo litigation
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- PROLOGUE -->
+<section class="section" id="prologue">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Bleich's $578&nbsp;Million Question</h2>
+  </div>
+  <div class="section-dek reveal">Zero Item 11 disclosures. $578 million in institutional assets. One man's regulatory history — invisible to the standard screening process.</div>
+
+  <div class="section-body">
+    <p class="reveal"><strong>Zero.</strong> That is the number of disciplinary disclosures on the Form ADV of EntryPoint Capital, LLC — the document that pension funds, endowments, and family offices rely on to evaluate their fund managers. Zero Item 11 entries. Zero regulatory actions. Zero material legal proceedings. A clean sheet.</p>
+
+    <p class="reveal">EntryPoint Capital manages $578 million. Its CEO is Lawrence Leibowitz, former Chief Operating Officer of the New York Stock Exchange. Its administrator is SS&C Technologies. Its strategy — "Third Moment," a reference to statistical skewness — signals quantitative sophistication. The pitch to allocators is impeccable.</p>
+
+    <p class="reveal">But the man who owns the firm and controls the investment decisions is Michael Edward Bleich (CRD# 4262671). And Bleich's regulatory history is not zero. It is <strong class="mono-num">$3,000,000</strong> in <a href="https://www.finra.org/" target="_blank" rel="noopener" title="Financial Industry Regulatory Authority">FINRA</a> fines. It is <strong class="mono-num">295,950,000</strong> phantom shares generated through systematic naked short selling. It is <strong>four dissolved corporate entities</strong> over thirteen years — each dissolution resetting the disclosure clock so that the next firm's CRD search returns nothing. The gap between what EntryPoint's filings show and what the public record contains is the central finding of this investigation.</p>
+
+    <div class="stat-grid reveal-stagger">
+      <div class="stat-box reveal">
+        <div class="stat-number counter-animate" data-target="578000000" data-prefix="$" data-suffix="M" data-display="$578M">$578M</div>
+        <div class="stat-label">Assets Under Management</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number counter-animate" data-target="3697500" data-prefix="$" data-suffix="M" data-display="$3.7M">$3.7M</div>
+        <div class="stat-label">Enforcement Penalties</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number counter-animate" data-target="295950000" data-display="295.9M">295.9M</div>
+        <div class="stat-label">Phantom Shares</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-number">ZERO</div>
+        <div class="stat-label">Item 11 Disclosures</div>
+      </div>
+    </div>
+
+    <p class="reveal">This report reconstructs that gap from public records.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER I -->
+<section class="section" id="chapter-1">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Bleich at Lehman: The Making of a Market Structure Operator</h2>
+  </div>
+  <div class="section-dek reveal">Head of Liquidity Strategy for U.S. Equities. BATS board member. A physicist who learned how settlement systems worked — from the inside.</div>
+
+  <div class="section-body">
+    <p class="reveal">Before Michael Bleich generated 295 million phantom shares, he learned how settlement systems worked from the inside. As Head of Liquidity Strategy for U.S. Equities at Lehman Brothers (2004–2008), he was responsible for algorithmic routing, dark pool utilization, and electronic execution — one of the most powerful positions in electronic trading. He championed Lehman's minority investment in <a href="https://www.sec.gov/files/rules/other/2008/34-57322_application.htm" target="_blank" rel="noopener" title="SEC — BATS Exchange application">BATS Trading</a>, the Electronic Communication Network that the SEC would later <a href="https://www.hbsslaw.com/sites/default/files/case-downloads/directedge_batsglobal/01.12.15_directedge_batsglobal_sec_order.pdf" target="_blank" rel="noopener" title="SEC order — Direct Edge/BATS Global">penalize $14 million</a> for creating <a href="https://www.hbsslaw.com/cases/direct-edgebats-global" target="_blank" rel="noopener" title="HBS Law — Direct Edge/BATS Global case">secretive order types disclosed selectively to elite high-frequency trading firms</a>.</p>
+
+    <p class="reveal">Bleich sat on the BATS board. He held a doctorate in theoretical physics from Duke University (1997). He had entered finance not through the traditional routes of investment banking or sales, but through the mathematics of market microstructure — the study of how orders move through electronic systems, how latency creates arbitrage, how settlement mechanics can be exploited by those who understand them precisely.</p>
+
+    <p class="reveal">On April 8, 2006, he married Alexis Kate Kaminsky at the Palm House of the Brooklyn Botanic Garden. <a href="https://www.nytimes.com/2006/04/09/fashion/weddings/weddingscelebrations-alexis-kaminsky-michael-bleich.html" target="_blank" rel="noopener" title="NYT — Kaminsky-Bleich wedding announcement, April 9, 2006">The New York Times ran the announcement</a>. A year later, the couple purchased Unit 1 at 13 Harrison Street in Tribeca for $3.6 million.</p>
+
+    <p class="reveal">Then <a href="https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers" target="_blank" rel="noopener" title="Wikipedia — Bankruptcy of Lehman Brothers">Lehman Brothers collapsed</a>. And Bleich took what he had learned about the plumbing and built his own machine.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER II -->
+<section class="section" id="chapter-2">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Bleich's Scout Trading Machine: 295&nbsp;Million Phantom Shares</h2>
+  </div>
+  <div class="section-dek reveal">255 naked redemption orders. 14 leveraged <a href="https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-51" target="_blank" rel="noopener" title="SEC Investor Bulletin — Short Sales &amp; ETFs">ETFs</a>. Two years. Zero written supervisory procedures. A $3,000,000 fine.</div>
+
+  <div class="section-body">
+    <p class="reveal">Those are the numbers from <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading / Wedbush, March 2016">FINRA AWC 2010024386601</a>, the enforcement action that ended Scout Trading, LLC — the firm Michael Bleich founded in 2009, one year after Lehman's bankruptcy.</p>
+
+    <p class="reveal">The mechanics were precise. Scout submitted massive <a href="https://www.sec.gov/investor/pubs/regsho.htm" target="_blank" rel="noopener" title="SEC — Key Points About Regulation SHO">ETF</a> redemption orders while "insufficiently long" — industry parlance for not owning the shares being tendered. This triggered automatic <a href="https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data" target="_blank" rel="noopener" title="SEC — Fails-to-Deliver Data">fails-to-deliver</a> by the T+3 settlement deadline. Scout then invoked the bona fide market maker exemption, which grants an additional three days to settle. FINRA specifically found that Scout was not a market maker. At the T+6 deadline, Scout closed the position — and immediately re-established an identical naked position the next day.</p>
+
+    <p class="reveal">The cycle repeated continuously from January 2010 to March 2012. In the Direxion Daily Financial Bear 3X Shares ETF alone, Scout's activity accounted for <strong><a href="https://www.sec.gov/data-research/sec-markets-data/fails-deliver-data" target="_blank" rel="noopener" title="SEC — Fails-to-Deliver Data">59 percent of all fails-to-deliver nationwide</a></strong>. One firm, controlled by one individual, had distorted the settlement system for an entire publicly traded security across American markets.</p>
+
+    <blockquote class="reveal">
+      During the review period, Scout Trading submitted at least 255 naked redemption orders through Wedbush in 11 ETFs, totaling over 295 million shares.
+      <cite>— FINRA, March 2016</cite>
+    </blockquote>
+
+    <div class="violation-metrics reveal">
+      <div class="vm-cell"><div class="vm-number">255+</div><div class="vm-label">Naked Orders</div></div>
+      <div class="vm-cell"><div class="vm-number">295.9M</div><div class="vm-label">Total Shares</div></div>
+      <div class="vm-cell"><div class="vm-number">59%</div><div class="vm-label">FAZ Market Fails</div></div>
+      <div class="vm-cell"><div class="vm-number">ZERO</div><div class="vm-label">WSPs</div></div>
+      <div class="vm-cell"><div class="vm-number">1.1M</div><div class="vm-label">Avg Deficit / Order</div></div>
+      <div class="vm-cell"><div class="vm-number">9.8M</div><div class="vm-label">Largest Single Trade</div></div>
+      <div class="vm-cell"><div class="vm-number">250+</div><div class="vm-label">Threshold List Days</div></div>
+      <div class="vm-cell"><div class="vm-number">95%</div><div class="vm-label">Clearing Fail Rate</div></div>
+    </div>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Evidence: Zero Compliance Infrastructure</div>
+      <p>Scout Trading maintained zero written supervisory procedures throughout the violation period. Not inadequate procedures. Not lax procedures. None. For more than two years, the firm operated a systematic short-selling scheme with no compliance infrastructure of any kind. The absence was not a gap. It was a design choice.</p>
+    </div>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Evidence: The Market Maker Contradiction</div>
+      <p><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE Docket 12-0059</a> (January 2013) reveals what may be the most damning detail in the enforcement record. Scout Trading was fined $10,000 for failing on "numerous occasions" to provide and maintain two-sided 100-share quotes in its remote market-making assignment — a violation of CBOE Rule 53.23. Providing continuous two-sided liquidity is the defining obligation of a market maker. Scout was claiming market-maker privileges to obtain the T+6 settlement window while simultaneously failing to fulfill the only duty that justified those privileges. The CBOE's own enforcement record proves the exemption was fraudulently invoked.</p>
+    </div>
+
+    <p class="reveal">The <a href="https://www.cboe.com/" target="_blank" rel="noopener" title="Cboe Global Markets">CBOE</a> actions did not stop there. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 12-0099</a> (June 2013) found that Scout had failed to designate a Chief Compliance Officer or maintain registration records — a $7,500 fine for running a regulated entity with no designated compliance officer on record. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 14-0018</a> (May 2014) imposed $5,000 for Regulation NMS trade-through violations. Three separate enforcement actions from a single exchange, each documenting a different dimension of the same operational posture: rules as obstacles to be circumvented, not constraints to be honored.</p>
+
+    <p class="reveal">On April 7, 2015, <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading / Wedbush">FINRA censured Scout Trading and imposed a $3,000,000 fine</a> — the capstone of a two-year enforcement accumulation. Wedbush Securities, the clearing firm that processed Scout's orders without adequate oversight, would later pay $675,000 in its own penalties.</p>
+
+    <div class="table-wrapper reveal">
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Authority</th><th>Docket</th><th>Fine</th><th>Finding</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Jan 2013</td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE</a></td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Docket 12-0059">12-0059</a></td><td>$10,000</td><td>No two-sided quotes while claiming market-maker privileges</td></tr>
+          <tr><td>Jun 2013</td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE</a></td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Docket 12-0099/126">12-0099/126</a></td><td>$7,500</td><td>No designated CCO on record</td></tr>
+          <tr><td>May 2014</td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE</a></td><td><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Docket 14-0018">14-0018</a></td><td>$5,000</td><td>Regulation NMS trade-through violations</td></tr>
+          <tr><td>Apr 2015</td><td>FINRA</td><td>2010024386601</td><td><strong><a href="https://www.nasdaqtrader.com/content/marketregulation/NASDAQ/DisciplinaryActions/SCOU_NQ_2015.pdf" target="_blank" rel="noopener" title="NASDAQ Disciplinary Action — Scout Trading">$3,000,000</a></strong></td><td>255+ naked orders; 295M shares; Reg SHO; zero WSPs</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="enforcement-total reveal">
+      <div class="et-cell"><div class="et-number"><a href="https://www.nasdaqtrader.com/content/marketregulation/NASDAQ/DisciplinaryActions/SCOU_NQ_2015.pdf" target="_blank" rel="noopener" title="NASDAQ Disciplinary Action — Scout Trading" style="color:inherit;text-decoration:none;border-bottom:1px dashed currentColor">$3,022,500</a></div><div class="et-label">Scout Direct</div></div>
+      <div class="et-cell"><div class="et-number"><a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Wedbush $675,000" style="color:inherit;text-decoration:none;border-bottom:1px dashed currentColor">$675,000</a></div><div class="et-label">Wedbush Clearing</div></div>
+      <div class="et-cell"><div class="et-number">$3,697,500+</div><div class="et-label">Cross-Entity Total</div></div>
+    </div>
+
+    <p class="reveal">Scout Trading was dissolved. The fines were paid. The next entity was already forming.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER III -->
+<section class="section" id="chapter-3">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>The Bleich Dissolution Pattern: Five Entities, Thirteen Years</h2>
+  </div>
+  <div class="section-dek reveal">Each dissolution resets the CRD disclosure clock. Each new entity starts with a clean search result. The regulatory history does not transfer.</div>
+
+  <div class="section-body">
+    <div class="entity-timeline reveal">
+      <div class="entity-timeline-items">
+        <div class="entity-item defunct">
+          <div class="entity-name">Michael Edward Bleich NY Inc.</div>
+          <div class="entity-dates">2003–2009</div>
+          <div class="entity-status defunct">DEFUNCT</div>
+        </div>
+        <div class="entity-arrow">&rarr;</div>
+        <div class="entity-item defunct">
+          <div class="entity-name">Finch Capital LLC</div>
+          <div class="entity-dates">2006–2009</div>
+          <div class="entity-status defunct">DEFUNCT</div>
+        </div>
+        <div class="entity-arrow">&rarr;</div>
+        <div class="entity-item defunct">
+          <div class="entity-name">Scout Trading LLC</div>
+          <div class="entity-dates">2009–2015</div>
+          <div class="entity-crd"><a href="https://files.brokercheck.finra.org/firm/firm_151990.pdf" target="_blank" rel="noopener" title="FINRA BrokerCheck — Scout Trading">CRD# 151990</a></div>
+          <div class="entity-status defunct">DEFUNCT</div>
+        </div>
+        <div class="entity-arrow">&rarr;</div>
+        <div class="entity-item defunct">
+          <div class="entity-name">Ophir Partners LLC</div>
+          <div class="entity-dates">2014–2017</div>
+          <div class="entity-crd">CRD# 164729</div>
+          <div class="entity-status defunct">DEFUNCT</div>
+        </div>
+        <div class="entity-arrow">&rarr;</div>
+        <div class="entity-item active">
+          <div class="entity-name">EntryPoint Capital LLC</div>
+          <div class="entity-dates">2016–present</div>
+          <div class="entity-crd">CRD# 313946</div>
+          <div class="entity-status active">ACTIVE</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="reveal">Between the dissolution of Ophir Partners and the formation of EntryPoint Capital, the record shows Bleich at Inferent Capital (2017–2020) as a Research Team Lead in machine learning and quantitative research — a transitional role at a firm he did not own. The interlude matters less for what Bleich did there than for what was happening in the background: the disclosure clock on his predecessor entities was running down. By the time EntryPoint Capital filed its first Form ADV, the dissolved firms were receding into archival obscurity — findable only by a searcher who already knew to look.</p>
+
+    <p class="reveal">The sequence matters because of what it accomplishes. Each time an entity carrying enforcement baggage is dissolved and a new entity is formed with a clean CRD number, the standard <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" title="FINRA BrokerCheck">FINRA BrokerCheck</a> and SEC IAPD searches run against the new number. The regulatory history does not transfer. The disclosure clock resets.</p>
+
+    <p class="reveal">Search EntryPoint Capital's CRD — 313946 — and the result is clean. No enforcement actions. No disciplinary proceedings. No material legal events. A compliance officer pulling Bleich's individual BrokerCheck report would find the Scout Trading connection — but only if the search began with Bleich the person, rather than EntryPoint the firm. The distinction is the mechanism. Institutional due diligence teams running entity-level screens will find nothing.</p>
+
+    <div class="pull-quote reveal">
+      <p>That is how $578 million in institutional capital came to be managed by an individual with $3 million in documented regulatory penalties — without the standard screening process catching it.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER IV -->
+<section class="section" id="chapter-4">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>EntryPoint Capital's $578&nbsp;Million Disclosure Gap</h2>
+  </div>
+  <div class="section-dek reveal">Form ADV Item 11: zero entries. The question the SEC's Division of Examinations is positioned to resolve.</div>
+
+  <div class="section-body">
+    <p class="reveal">EntryPoint Capital's Form ADV identifies Michael Bleich as a control person through his indirect ownership via EntryPoint Partners, LP. The same Form ADV contains zero Item 11 disclosures — the section where disciplinary history, regulatory actions, and material legal proceedings involving the adviser or its control persons are catalogued.</p>
+
+    <p class="reveal">The $3 million FINRA fine was levied against an entity Bleich founded and controlled. Whether the entity dissolution pattern creates a technical basis for non-disclosure — or whether Item 11 requires disclosure of a control person's regulatory history at predecessor entities — is a question the SEC's Division of Examinations is positioned to resolve. What is not in question is the information asymmetry: pension funds, endowments, and family offices allocating capital to EntryPoint's Third Moment strategy are making decisions without access to the complete enforcement record of the individual who controls their capital.</p>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Evidence: Capital Structure Breakdown</div>
+      <p>$578,038,743 in regulatory assets under management. $256,342,753 in 13F-reportable equity holdings. The difference — $321,695,990 — sits in instruments not subject to position-level public disclosure: cash, short positions, fixed income, OTC derivatives, and the offshore Cayman capital. That non-reportable component represents 55.6 percent of the total fund.</p>
+    </div>
+
+    <div class="aum-quarters reveal">
+      <div class="aq-cell"><div class="aq-number">$218.5M</div><div class="aq-label">Q1 2025</div></div>
+      <div class="aq-cell"><div class="aq-number">$199.5M</div><div class="aq-label">Q2 2025</div></div>
+      <div class="aq-cell"><div class="aq-number">$258.2M</div><div class="aq-label">Q3 2025</div></div>
+      <div class="aq-cell"><div class="aq-number">$256.3M</div><div class="aq-label">Q4 2025</div></div>
+    </div>
+
+    <div class="enforcement-total reveal" style="border-color:var(--rule-light);">
+      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--text-primary);">$325.6M</div><div class="et-label">U.S. Persons (56.4%)</div></div>
+      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--text-primary);">$252.4M</div><div class="et-label">Non-U.S. Persons (43.6%)</div></div>
+      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--mono-color);">639</div><div class="et-label">Equity Positions</div></div>
+    </div>
+
+    <p class="reveal">The Cayman component flows through a standard master-feeder architecture — three vehicles, two jurisdictions, one master fund where all capital commingles:</p>
+
+    <div class="arch-table reveal" style="overflow-x:auto;">
+      <table style="min-width:520px;">
+        <thead>
+          <tr><th>Vehicle</th><th>Domicile</th><th>Type</th><th>Investors</th><th>Exemption</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>EP Third Moment Fund, LLC</td><td>Delaware</td><td>Onshore Feeder</td><td>U.S. taxable</td><td>Reg D 506(b); §3(c)(7)</td></tr>
+          <tr><td>EP Third Moment International, LP</td><td>Cayman Islands</td><td>Offshore Feeder</td><td>Non-U.S. + exempt</td><td>Reg D 506(b); §3(c)(7)</td></tr>
+          <tr><td>EP Third Moment Master Fund, LP</td><td>Cayman Islands</td><td>Master Fund</td><td>All capital</td><td>CIMA registered</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="reveal">Cayman master-feeder structures are standard institutional architecture. Bridgewater, Citadel, and Two Sigma deploy identical frameworks. The structure alone is not notable. The proportion is. Among funds of comparable size and strategy type, a non-reportable ratio exceeding 50 percent is elevated. It does not imply wrongdoing. But for a fund whose owner has a documented history of operating at the boundaries of regulatory disclosure, the opacity takes on a contextual weight it would not carry elsewhere.</p>
+
+    <p class="reveal"><strong class="mono-num">4.73 percent.</strong> That is EntryPoint's three-year annualized return on its 13F equity portfolio (Q4 2022–Q4 2025), with a Q4 2025 incremental return of just 0.27 percent. The S&P 500 returned 22.1 percent over the same period — a gap of 17.37 percentage points annually. The 13F portfolio captures only the reportable equity sleeve, roughly half the fund; the non-reportable components may perform differently. But for the visible portion of a $578 million fund charging institutional fees on a Cayman master-feeder structure, the numbers ask a question the governance architecture cannot answer.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER V -->
+<section class="section" id="chapter-5">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Leibowitz, Bleich, and the Governance Question</h2>
+  </div>
+  <div class="section-dek reveal">Zero percent ownership. Six concurrent board seats. The CEO holds the title. Bleich holds the firm.</div>
+
+  <div class="section-body">
+    <p class="reveal">Lawrence Leibowitz's credentials are not in question. Former Chief Operating Officer of NYSE Euronext. Head of Global Equities Markets. Managing Director of Americas Equities at UBS. Board positions at Forge Global Holdings, Janus Henderson, and multiple additional entities. He is one of the most credentialed executives in market structure.</p>
+
+    <p class="reveal">The structural question is narrower: what does it mean for a firm's governance when the CEO holds no economic stake in its long-term performance, while the person who does hold beneficial ownership — and who controls the investment strategy — is the individual with the $3 million regulatory history? The Form ADV confirms the arrangement explicitly: Bleich is the indirect beneficial owner through EntryPoint Partners, LP. Leibowitz holds the title. Bleich holds the firm.</p>
+
+    <p class="reveal">This does not establish that Leibowitz is operationally disengaged; he may be deeply involved in daily decisions. But the structural incentives concentrate authority in the owner-CIO, not the non-owner CEO. Allocators must evaluate whether that structure provides a genuine operational firewall or functions primarily as a credentialing layer designed to clear due diligence screens. The documented facts support either reading. The distinction determines whether Leibowitz's presence is a control mechanism or a signal.</p>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Evidence: Reciprocal Governance</div>
+      <p>When Jose Marques departed EntryPoint in February 2022 to become CEO of Intech Investment Management, Leibowitz assumed the EntryPoint CEO role. Leibowitz was subsequently appointed to Intech's board — the firm where his predecessor now leads. Reciprocal governance arrangements are common in institutional finance, but they invite scrutiny at any firm where the separation of economic interest from operational authority is already a live issue.</p>
+    </div>
+
+    <p class="reveal">One additional structural detail warrants examination. EntryPoint's Form ADV identifies Andrew Alkon as simultaneously holding the roles of Chief Compliance Officer, Chief Operating Officer, and Chief Financial Officer. At a $578 million fund, the compliance function exists to provide independent oversight of operations and finance — the very functions Alkon also runs. The three-role concentration eliminates the structural independence that compliance is designed to provide. For a firm whose founder built and operated Scout Trading with zero written supervisory procedures, the design choice is familiar.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER VI -->
+<section class="section" id="chapter-6">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>The Bleich Debt Chain: From Corporate Default to Personal Lien</h2>
+  </div>
+  <div class="section-dek reveal">$2,233,007. A promissory note at 10% interest. A default at 15%. A UCC-1 lien on the family home in Tribeca.</div>
+
+  <div class="section-body">
+    <p class="reveal"><strong class="mono-num">$2,233,007.</strong> That is the principal on the promissory note Michael and Alexis Bleich signed to <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — New York State Courts Electronic Filing">OPEH LLC</a> on January 11, 2018 — bearing interest at 10 percent per annum, compounded annually, with a default rate of 15 percent. The note was secured by a UCC-1 lien on their <a href="https://www.realtyhop.com/property-records/search?q=bleich+his+wife+alexis+k" target="_blank" rel="noopener" title="RealtyHop — Bleich property records">13 Harrison Street residence</a> — the same Tribeca condo purchased for $3.6 million in 2007.</p>
+
+    <p class="reveal">The note's origin is the key. It was tendered "in connection with the satisfaction and discharge of the corporate obligation of Ophir Partners, LLC." The Bleiches personally assumed more than $2.2 million in debt that belonged to their defunct hedge fund — the entity dissolved because Scout Trading's regulatory contagion had made continued SEC registration untenable.</p>
+
+    <p class="reveal">They defaulted on September 1, 2018. Accrued interest: $155,070. OPEH LLC filed suit (<a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Search Index No. 654791/2018">Index No. 654791/2018</a>) seeking $2,388,077. The case was discontinued by stipulation in December 2018, but the underlying obligation — compounding at the default rate — has not been publicly resolved.</p>
+
+    <div class="pull-quote reveal">
+      <p>The chain is direct: $3 million enforcement action against Scout &rarr; dissolution of Scout &rarr; withdrawal of Ophir &rarr; personal assumption of Ophir's corporate debt &rarr; default and UCC-1 lien. The regulatory history is not abstract. It has a dollar amount, a default date, and a lien on the family home.</p>
+    </div>
+
+    <p class="reveal">For institutional investors, this chain exposes a dimension of risk that no Form ADV captures. The CIO of a $578 million fund carries personal financial obligations arising from predecessor entity failure — obligations that trace directly to the same enforcement actions that his current firm's filings do not disclose. The undisclosed history and the personal financial distress are two faces of the same fact.</p>
+  </div>
+</div>
+</section>
+
+<!-- CHAPTER VII -->
+<section class="section" id="chapter-7">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Bleich's Lawyers: Fabrication Findings and Suspended Licenses</h2>
+  </div>
+  <div class="section-dek reveal">$198,877.50 in anti-SLAPP sanctions. 26 documented false statements. A suspended co-counsel. A PHV-ineligible lead litigator.</div>
+
+  <div class="section-body">
+    <p class="reveal"><strong class="mono-num">$198,877.50.</strong> That is the anti-SLAPP fee sanction entered against the client of Robert A. Giacovas in <em>Medifast v. Minkow</em> (S.D. Cal. 3:10-cv-00382) — the cost of defending against claims a federal court found were built on fabricated quotes. Judge Janis Sammartino ruled that Giacovas "paraphrased statements seemingly for maximum shock value." The court granted the defendants' anti-SLAPP motions and dismissed all claims. After the ruling, forensic accountant Tracy Coenen documented 26 specific instances of false statements in Giacovas's appellate briefs.</p>
+
+    <p class="reveal">Giacovas is Michael Bleich's lead litigator. He represents the Bleiches in their current property dispute (Index No. 155721/2024) through his firm, Lazare Potter Giacovas & Moyle LLP. In February 2026, the New Jersey Lawyers' Fund for Client Protection confirmed him ineligible for pro hac vice admission.</p>
+
+    <p class="reveal">His co-counsel is Lynn Ellen Judell of Rukab Brash PLLC (California Bar #114924). Judell's California Bar license has been suspended since July 2, 2024. The State Bar has issued a formal Consumer Alert regarding her status. She carries a prior 2006 administrative suspension. She appeared as co-counsel on the June 21, 2024 memorandum of law in Bleich's preliminary injunction motion — eleven days before her suspension became effective. She is also listed on the New Jersey PHV ineligibility list.</p>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Evidence: Pattern of Litigation Tactics</div>
+      <p>The pattern of Giacovas's tactics in the Bleich litigation tracks the Medifast playbook: fabrication of material facts as foundation, procedural attrition to inflate costs, equitable arguments that conceal the client's own violations, and settlement demands designed to extract concessions under economic pressure. In the Bleich matter, the verified complaint allegedly pleads ownership of Floor Area Ratio rights — a zoning concept the underlying condominium declaration does not assign to individual unit owners — while concealing the Bleiches' own Certificate of Occupancy violations in their cellar unit.</p>
+    </div>
+
+    <p class="reveal">A client with a documented history of exploiting structural loopholes chose attorneys with a documented history of fabricating material facts. The alignment is precise, and it is visible to any tribunal that looks.</p>
+  </div>
+</div>
+</section>
+
+<!-- RED FLAG COMPENDIUM -->
+<section class="section" id="red-flags">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>The Bleich Red Flag Compendium: 15&nbsp;Findings</h2>
+  </div>
+  <div class="section-dek reveal">Seven critical. Five high. Three moderate. No single item drives the aggregate assessment — the severity derives from their simultaneous presence across every domain.</div>
+
+  <div class="severity-summary reveal">
+    <span class="sc">7 Critical</span>
+    <span class="sh">5 High</span>
+    <span class="sm">3 Moderate</span>
+  </div>
+
+  <div class="table-wrapper reveal">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Red Flag</th>
+          <th>Severity</th>
+          <th>Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>$3,697,500+ in combined enforcement fines (Scout $3,022,500 + Wedbush $675,000)</td><td><span class="severity severity-critical">Critical</span></td><td><a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener">FINRA AWC 2010024386601</a>; <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener">CBOE Dockets 12-0059, 12-0099/126, 14-0018</a></td></tr>
+        <tr><td>2</td><td>295,950,000 phantom shares across 14 leveraged ETFs</td><td><span class="severity severity-critical">Critical</span></td><td><a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener">FINRA AWC 2010024386601</a></td></tr>
+        <tr><td>3</td><td>Zero written supervisory procedures during 2+ years of violations</td><td><span class="severity severity-critical">Critical</span></td><td><a href="https://www.nasdaqtrader.com/content/marketregulation/NASDAQ/DisciplinaryActions/SCOU_NQ_2015.pdf" target="_blank" rel="noopener">FINRA AWC finding</a></td></tr>
+        <tr><td>4</td><td>4-entity dissolution-and-reconstitution cycle (2003–2016)</td><td><span class="severity severity-critical">Critical</span></td><td><a href="https://brokercheck.finra.org/" target="_blank" rel="noopener">FINRA BrokerCheck</a></td></tr>
+        <tr><td>5</td><td>Zero Item 11 disclosures on Form ADV despite control-person history</td><td><span class="severity severity-critical">Critical</span></td><td>SEC IAPD</td></tr>
+        <tr><td>6</td><td>55.6% non-reportable / dark capital ratio</td><td><span class="severity severity-critical">Critical</span></td><td>SEC EDGAR / Form ADV</td></tr>
+        <tr><td>7</td><td>43.7% of AUM ($252.4M) in Cayman offshore structure</td><td><span class="severity severity-critical">Critical</span></td><td>Form ADV</td></tr>
+        <tr><td>8</td><td>CEO holds zero ownership, 6 concurrent board seats — governance concentration concern</td><td><span class="severity severity-high">High</span></td><td>Form ADV / BrokerCheck</td></tr>
+        <tr><td>9</td><td>$2.2M personal default on predecessor entity debt (OPEH)</td><td><span class="severity severity-high">High</span></td><td><a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener">NYSCEF 654791/2018</a></td></tr>
+        <tr><td>10</td><td>Lead litigation counsel declared PHV-ineligible (Giacovas)</td><td><span class="severity severity-high">High</span></td><td>NJ Lawyers' Fund</td></tr>
+        <tr><td>11</td><td>Co-counsel suspended from California Bar (Judell)</td><td><span class="severity severity-high">High</span></td><td>CA State Bar #114924</td></tr>
+        <tr><td>12</td><td>4.73% 3-year return vs 22.1% S&P 500 benchmark</td><td><span class="severity severity-moderate">Moderate</span></td><td>SEC EDGAR 13F</td></tr>
+        <tr><td>13</td><td>Scout Trading personnel retained at EntryPoint (33% of team)</td><td><span class="severity severity-moderate">Moderate</span></td><td>Form ADV</td></tr>
+        <tr><td>14</td><td>Key service providers (auditor, prime broker, counsel) unconfirmed</td><td><span class="severity severity-moderate">Moderate</span></td><td>Form ADV gap</td></tr>
+        <tr><td>15</td><td>CCO, COO, and CFO roles held by single individual (Andrew Alkon) — compliance independence eliminated</td><td><span class="severity severity-high">High</span></td><td>Form ADV</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- THE CASE FOR AND AGAINST -->
+<section class="section" id="verdict">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>The Case For and Against Michael Bleich</h2>
+  </div>
+  <div class="section-dek reveal">The accumulated evidence — and the institutional defense. Then: the gap that separates them.</div>
+
+  <div class="comparison reveal">
+    <div class="comparison-col against">
+      <h4>The Case Against</h4>
+      <ul>
+        <li>$3,697,500+ in combined enforcement fines across Scout Trading and its clearing firm</li>
+        <li>295,950,000 phantom shares generated through systematic naked short selling</li>
+        <li>Zero written supervisory procedures during two years of violations</li>
+        <li>CBOE's own records proving Scout claimed market-maker privileges while failing to fulfill market-maker obligations</li>
+        <li>Four entities dissolved over thirteen years, each dissolution resetting CRD disclosure obligations</li>
+        <li>Zero Item 11 disclosures on the current firm's Form ADV</li>
+        <li>55.6% of total AUM in non-reportable instruments</li>
+        <li>$252.4 million (43.7%) in a Cayman offshore structure</li>
+        <li>A CEO with no ownership and six concurrent board seats</li>
+        <li>CCO, COO, and CFO roles concentrated in a single individual — compliance independence structurally eliminated</li>
+        <li>A $2,233,007 personal default arising from predecessor entity debt</li>
+        <li>Litigation counsel with judicial finding of fabricated quotes and a suspended bar license</li>
+        <li>A 17.37-percentage-point annual performance gap against the S&P 500</li>
+      </ul>
+    </div>
+    <div class="comparison-col for">
+      <h4>The Case For</h4>
+      <ul>
+        <li>Ten years without a new regulatory action at the entity level</li>
+        <li>Independent NAV verification through SS&C Technologies</li>
+        <li>A CEO whose institutional pedigree — NYSE Euronext COO, UBS Managing Director — is genuine</li>
+        <li>An experienced team including Deputy CIO Sidney Browne</li>
+        <li>A Cayman master-feeder structure that is industry-standard for funds of this size</li>
+        <li>$578 million in AUM suggesting sophisticated allocators conducted their own diligence</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-body">
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin:2rem 0 1rem;font-weight:700;">The Gap</h3>
+
+    <p class="reveal">Standard entity-level CRD screening of EntryPoint Capital (CRD# 313946) would not have surfaced the $3,000,000 FINRA enforcement action against Scout Trading (CRD# 151990). It would not have identified the four-entity dissolution sequence. It would not have revealed the $2,233,007 OPEH default, the 55.6 percent non-reportable capital ratio, or the licensing status of the firm's litigation counsel. Each of these findings required searches that began with Bleich the individual — not EntryPoint the firm — and then traced backward through predecessor CRD numbers, NYSCEF court indices, state bar records, and CBOE docket archives.</p>
+
+    <p class="reveal">An institutional allocator relying on Form ADV Item 11 disclosures, entity-level BrokerCheck results, and standard compliance questionnaires would have encountered none of this information. The disclosure gap is not a hypothesis. It is a structural feature of the entity dissolution pattern — and $578 million in institutional capital currently sits on one side of it.</p>
+
+    <blockquote class="reveal">
+      Panics do not destroy capital; they merely reveal the extent to which it has been destroyed by its betrayal into hopelessly unproductive works.
+      <cite>— John Stuart Mill</cite>
+    </blockquote>
+  </div>
+</div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="section" id="methodology">
+<div class="container">
+  <div class="section-heading reveal">
+    <h2>Methodology &amp; Sources</h2>
+  </div>
+
+  <div class="section-body">
+    <p class="reveal">This investigation draws exclusively on public records. All factual claims have been verified against primary sources. Where discrepancies between sources exist, they are noted explicitly. Editorial characterizations — such as descriptions of governance structure or inferences about strategic intent — are framed as analytical conclusions drawn from documented evidence rather than statements of established fact, and are identified as such throughout. No confidential, non-public, or illegally obtained information was used in this investigation.</p>
+  </div>
+</div>
+</section>
+
+</main>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="site-footer">
+<div class="container">
+  <div class="footer-section">
+    <div class="footer-heading">Primary Sources</div>
+    <div class="footer-sources">
+      <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener">FINRA BrokerCheck</a> — CRDs 4262671, 2024745, 151990, 164729, 313946<br>
+      SEC Investment Adviser Public Disclosure (IAPD) &amp; EDGAR 13F filings<br>
+      <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener">CBOE Disciplinary Dockets</a><br>
+      <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener">NYSCEF Court Records</a> — Index Nos. 654791/2018, 651188/2019, 155721/2024<br>
+      California State Bar Records — Attorney #114924<br>
+      New Jersey Lawyers' Fund for Client Protection — PHV Ineligibility Lists<br>
+      The New York Times — April 9, 2006<br>
+      Traders Magazine — September 2006<br>
+      Janus Henderson Press Releases<br>
+      <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener">FINRA Press Release</a> — March 21, 2016<br>
+      ThinkAdvisor — February 11, 2021
+    </div>
+  </div>
+  <div class="footer-section">
+    <div class="footer-heading">Legal Notice</div>
+    <p>All rights reserved. This report is intended for due diligence and investigative journalism purposes. Publication or distribution should be reviewed by legal counsel.</p>
+  </div>
+  <div class="footer-colophon">
+    An Investigative Report &middot; March 2026
+  </div>
+</div>
+</footer>
+
+<!-- ============================================
+     JAVASCRIPT
+     ============================================ -->
+<script>
+(function() {
+  'use strict';
+
+  // ---- THEME TOGGLE ----
+  const html = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const iconSun = document.getElementById('themeIconSun');
+  const iconMoon = document.getElementById('themeIconMoon');
+
+  function setTheme(theme) {
+    html.setAttribute('data-theme', theme);
+    try { localStorage.setItem('theme', theme); } catch(e) {}
+    iconSun.style.display = theme === 'dark' ? 'block' : 'none';
+    iconMoon.style.display = theme === 'dark' ? 'none' : 'block';
+  }
+
+  // Init theme
+  let saved;
+  try { saved = localStorage.getItem('theme'); } catch(e) {}
+  if (saved) {
+    setTheme(saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  }
+
+  toggle.addEventListener('click', function() {
+    setTheme(html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  // ---- PROGRESS BAR ----
+  const progressBar = document.getElementById('progressBar');
+  function updateProgress() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  }
+
+  // ---- SCROLL REVEAL ----
+  const reveals = document.querySelectorAll('.reveal');
+  let revealObserver;
+
+  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    revealObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    reveals.forEach(function(el) { revealObserver.observe(el); });
+  } else {
+    reveals.forEach(function(el) { el.classList.add('visible'); });
+  }
+
+  // ---- SECTION TRACKING (Side Nav + Mobile Nav) ----
+  const sections = document.querySelectorAll('.section[id]');
+  const sideNavItems = document.querySelectorAll('.side-nav-item');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-drawer a');
+  const sideNav = document.getElementById('sideNav');
+
+  let sectionObserver;
+  if ('IntersectionObserver' in window) {
+    sectionObserver = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          sideNavItems.forEach(function(item) {
+            item.classList.toggle('active', item.getAttribute('data-section') === id);
+          });
+          mobileNavLinks.forEach(function(link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { threshold: 0, rootMargin: '-30% 0px -65% 0px' });
+
+    sections.forEach(function(s) { sectionObserver.observe(s); });
+  }
+
+  // Show/hide side nav after hero
+  function updateSideNavVisibility() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > window.innerHeight * 0.5) {
+      sideNav.classList.add('visible');
+    } else {
+      sideNav.classList.remove('visible');
+    }
+  }
+
+  // ---- MOBILE NAV ----
+  const mobileToggle = document.getElementById('mobileNavToggle');
+  const mobileDrawer = document.getElementById('mobileNavDrawer');
+  const mobileOverlay = document.getElementById('mobileNavOverlay');
+
+  function openMobileNav() {
+    mobileDrawer.classList.add('open');
+    mobileOverlay.classList.add('open');
+    mobileToggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMobileNav() {
+    mobileDrawer.classList.remove('open');
+    mobileOverlay.classList.remove('open');
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  mobileToggle.addEventListener('click', openMobileNav);
+  mobileOverlay.addEventListener('click', closeMobileNav);
+  mobileNavLinks.forEach(function(link) {
+    link.addEventListener('click', closeMobileNav);
+  });
+
+  // ---- BACK TO TOP ----
+  const backToTop = document.getElementById('backToTop');
+  function updateBackToTop() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > window.innerHeight) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  }
+  backToTop.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ---- SCROLL HANDLER (debounced) ----
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        updateProgress();
+        updateSideNavVisibility();
+        updateBackToTop();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial calls
+  updateProgress();
+  updateSideNavVisibility();
+  updateBackToTop();
+
+})();
+</script>
+
+</body>
+</html>
