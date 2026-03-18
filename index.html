@@ -851,6 +851,9 @@ h3, h4 { font-weight: 700; } /* was 900 — differentiated for visual hierarchy 
 .section-body p {
   margin-bottom: 1.25rem;
   max-width: 65ch; /* optimal reading line length */
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 .section-body p:last-child { margin-bottom: 0; }
 
@@ -876,6 +879,9 @@ h3, h4 { font-weight: 700; } /* was 900 — differentiated for visual hierarchy 
   font-size: 0.92rem;
   line-height: 1.65;
   color: var(--text-secondary);
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 /* ============================================
@@ -1381,19 +1387,19 @@ blockquote cite {
 
 <!-- Side Navigation (Desktop) -->
 <nav class="side-nav" id="sideNav" aria-label="Section navigation">
-  <a href="#hero" class="side-nav-item active" data-section="hero"><span class="side-nav-dot"></span><span class="side-nav-label">Top</span></a>
-  <a href="#profiles" class="side-nav-item" data-section="profiles"><span class="side-nav-dot"></span><span class="side-nav-label">Subjects</span></a>
+  <a href="#hero" class="side-nav-item active" data-section="hero"><span class="side-nav-dot"></span><span class="side-nav-label">The Phantom Shares</span></a>
+  <a href="#profiles" class="side-nav-item" data-section="profiles"><span class="side-nav-dot"></span><span class="side-nav-label">Subject Profiles</span></a>
   <a href="#prologue" class="side-nav-item" data-section="prologue"><span class="side-nav-dot"></span><span class="side-nav-label">$578M Question</span></a>
-  <a href="#chapter-1" class="side-nav-item" data-section="chapter-1"><span class="side-nav-dot"></span><span class="side-nav-label">Lehman Years</span></a>
-  <a href="#chapter-2" class="side-nav-item" data-section="chapter-2"><span class="side-nav-dot"></span><span class="side-nav-label">Scout Trading</span></a>
-  <a href="#chapter-3" class="side-nav-item" data-section="chapter-3"><span class="side-nav-dot"></span><span class="side-nav-label">Dissolution</span></a>
+  <a href="#chapter-1" class="side-nav-item" data-section="chapter-1"><span class="side-nav-dot"></span><span class="side-nav-label">Bleich at Lehman</span></a>
+  <a href="#chapter-2" class="side-nav-item" data-section="chapter-2"><span class="side-nav-dot"></span><span class="side-nav-label">Scout Trading Machine</span></a>
+  <a href="#chapter-3" class="side-nav-item" data-section="chapter-3"><span class="side-nav-dot"></span><span class="side-nav-label">Dissolution Pattern</span></a>
   <a href="#chapter-4" class="side-nav-item" data-section="chapter-4"><span class="side-nav-dot"></span><span class="side-nav-label">Disclosure Gap</span></a>
-  <a href="#chapter-5" class="side-nav-item" data-section="chapter-5"><span class="side-nav-dot"></span><span class="side-nav-label">Governance</span></a>
+  <a href="#chapter-5" class="side-nav-item" data-section="chapter-5"><span class="side-nav-dot"></span><span class="side-nav-label">Governance Question</span></a>
   <a href="#chapter-6" class="side-nav-item" data-section="chapter-6"><span class="side-nav-dot"></span><span class="side-nav-label">Debt Chain</span></a>
-  <a href="#chapter-7" class="side-nav-item" data-section="chapter-7"><span class="side-nav-dot"></span><span class="side-nav-label">Lawyers</span></a>
-  <a href="#red-flags" class="side-nav-item" data-section="red-flags"><span class="side-nav-dot"></span><span class="side-nav-label">Red Flags</span></a>
-  <a href="#verdict" class="side-nav-item" data-section="verdict"><span class="side-nav-dot"></span><span class="side-nav-label">Verdict</span></a>
-  <a href="#methodology" class="side-nav-item" data-section="methodology"><span class="side-nav-dot"></span><span class="side-nav-label">Sources</span></a>
+  <a href="#chapter-7" class="side-nav-item" data-section="chapter-7"><span class="side-nav-dot"></span><span class="side-nav-label">Bleich's Lawyers</span></a>
+  <a href="#red-flags" class="side-nav-item" data-section="red-flags"><span class="side-nav-dot"></span><span class="side-nav-label">Red Flag Compendium</span></a>
+  <a href="#verdict" class="side-nav-item" data-section="verdict"><span class="side-nav-dot"></span><span class="side-nav-label">Case For &amp; Against</span></a>
+  <a href="#methodology" class="side-nav-item" data-section="methodology"><span class="side-nav-dot"></span><span class="side-nav-label">Methodology &amp; Sources</span></a>
 </nav>
 
 <!-- Mobile Nav Toggle -->
@@ -1412,18 +1418,18 @@ blockquote cite {
 <!-- Mobile Nav Drawer -->
 <nav class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Section navigation">
   <div class="drawer-close"><div class="drawer-handle"></div></div>
-  <a href="#hero">Top</a>
+  <a href="#hero">The Phantom Shares</a>
   <a href="#profiles">Subject Profiles</a>
   <a href="#prologue">Bleich's $578 Million Question</a>
-  <a href="#chapter-1">Bleich at Lehman Brothers</a>
+  <a href="#chapter-1">Bleich at Lehman</a>
   <a href="#chapter-2">Scout Trading Machine</a>
   <a href="#chapter-3">The Dissolution Pattern</a>
   <a href="#chapter-4">The Disclosure Gap</a>
-  <a href="#chapter-5">The Governance Question</a>
+  <a href="#chapter-5">Leibowitz &amp; the Governance Question</a>
   <a href="#chapter-6">The Debt Chain</a>
   <a href="#chapter-7">Bleich's Lawyers</a>
   <a href="#red-flags">Red Flag Compendium</a>
-  <a href="#verdict">The Case For and Against</a>
+  <a href="#verdict">The Case For &amp; Against</a>
   <a href="#methodology">Methodology &amp; Sources</a>
 </nav>
 
@@ -1458,8 +1464,7 @@ blockquote cite {
     <!-- Bleich Profile -->
     <div class="profile-card reveal">
       <div class="profile-photo profile-photo--image">
-        <!-- TODO: Rename bMiBl.png to assets/michael-bleich-headshot.png at deployment -->
-<img src="assets/michael-bleich-headshot.png" alt="Michael Edward Bleich — Chief Investment Officer, EntryPoint Capital" loading="lazy">
+        <img src="bMiBl.png" alt="Michael Edward Bleich — Chief Investment Officer, EntryPoint Capital" loading="lazy">
       </div>
       <div class="profile-info">
         <h3><a href="https://www.zoominfo.com/p/Michael-Bleich/12107508341" target="_blank" rel="noopener" title="ZoomInfo profile">Michael Edward Bleich</a></h3>
@@ -1468,7 +1473,7 @@ blockquote cite {
           <strong>CRD#</strong> 4262671<br>
           <strong>DOB</strong> c.&nbsp;1971<br>
           <strong>Education</strong> PhD, Theoretical Physics, Duke University (1997)<br>
-          <strong>Residence</strong> <a href="https://radaris.com/~Michael-Bleich/1682114236" target="_blank" rel="noopener" title="Radaris public records">13 Harrison St, Unit 1, New York, NY 10013</a><br>
+
           <strong>Career</strong> Lehman Brothers &rarr; Scout Trading &rarr; Ophir Partners &rarr; EntryPoint Capital
         </div>
         <div class="profile-highlight">
@@ -1490,7 +1495,6 @@ blockquote cite {
           <strong>Education</strong> B.A. Stanford (with distinction); M.A. Columbia; M.S.W. NYU<br>
           <strong>Licenses</strong> LCSW — NY, NJ, MA, CT, NH, MN<br>
           <strong>Practice</strong> <a href="https://maps.app.goo.gl/TpXvdeScYPaxWei3A" target="_blank" rel="noopener" title="Google Maps — 225 Broadway, Suite 2070">225 Broadway, Suite 2070, New York, NY</a><br>
-          <strong>Father</strong> Arthur C. Kaminsky (1946–2013), pioneering sports agent
         </div>
         <div class="profile-highlight">
           Co-signatory on $2,233,007 <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH LLC promissory note</a> &bull; Co-plaintiff in pending condo litigation
@@ -1549,11 +1553,18 @@ blockquote cite {
   <div class="section-dek reveal">Head of Liquidity Strategy for U.S. Equities. BATS board member. A physicist who learned how settlement systems worked — from the inside.</div>
 
   <div class="section-body">
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:0 0 1rem;font-weight:700;color:var(--text-primary);">Lehman Brothers, 2004–2008: Learning the Plumbing</h3>
     <p class="reveal">Before Michael Bleich generated 295 million phantom shares, he learned how settlement systems worked from the inside. As Head of Liquidity Strategy for U.S. Equities at Lehman Brothers (2004–2008), he was responsible for algorithmic routing, dark pool utilization, and electronic execution — one of the most powerful positions in electronic trading. He championed Lehman's minority investment in <a href="https://www.sec.gov/files/rules/other/2008/34-57322_application.htm" target="_blank" rel="noopener" title="SEC — BATS Exchange application">BATS Trading</a>, the Electronic Communication Network that the SEC would later <a href="https://www.hbsslaw.com/sites/default/files/case-downloads/directedge_batsglobal/01.12.15_directedge_batsglobal_sec_order.pdf" target="_blank" rel="noopener" title="SEC order — Direct Edge/BATS Global">penalize $14 million</a> for creating <a href="https://www.hbsslaw.com/cases/direct-edgebats-global" target="_blank" rel="noopener" title="HBS Law — Direct Edge/BATS Global case">secretive order types disclosed selectively to elite high-frequency trading firms</a>.</p>
 
-    <p class="reveal">Bleich sat on the BATS board. He held a doctorate in theoretical physics from Duke University (1997). He had entered finance not through the traditional routes of investment banking or sales, but through the mathematics of market microstructure — the study of how orders move through electronic systems, how latency creates arbitrage, how settlement mechanics can be exploited by those who understand them precisely.</p>
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Key Connection: $14M BATS Penalty — Bleich Was on the Board</div>
+      <p>Bleich sat on the BATS Holdings board of directors, granting him an insider's understanding of exchange mechanics, order routing, and the limitations of regulatory surveillance. The SEC later penalized BATS/Direct Edge $14 million (January 2015) for the same secretive order types Bleich helped bring to market. He was not personally named — but the board seat gave him the operational knowledge that would directly inform the Scout Trading scheme.</p>
+    </div>
 
-    <p class="reveal">On April 8, 2006, he married Alexis Kate Kaminsky at the Palm House of the Brooklyn Botanic Garden. <a href="https://www.nytimes.com/2006/04/09/fashion/weddings/weddingscelebrations-alexis-kaminsky-michael-bleich.html" target="_blank" rel="noopener" title="NYT — Kaminsky-Bleich wedding announcement, April 9, 2006">The New York Times ran the announcement</a>. A year later, the couple purchased Unit 1 at 13 Harrison Street in Tribeca for $3.6 million.</p>
+    <p class="reveal">He held a doctorate in theoretical physics from Duke University (1997). He had entered finance not through the traditional routes of investment banking or sales, but through the mathematics of market microstructure — the study of how orders move through electronic systems, how latency creates arbitrage, how settlement mechanics can be exploited by those who understand them precisely.</p>
+
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">April 2006 – September 2008: Respectability, Then Collapse</h3>
+    <p class="reveal">On April 8, 2006, he married Alexis Kate Kaminsky at the Palm House of the Brooklyn Botanic Garden. <a href="https://www.nytimes.com/2006/04/09/fashion/weddings/weddingscelebrations-alexis-kaminsky-michael-bleich.html" target="_blank" rel="noopener" title="NYT — Kaminsky-Bleich wedding announcement, April 9, 2006">The New York Times ran the announcement</a>. A year later, the couple purchased a Tribeca condominium for $3.6 million.</p>
 
     <p class="reveal">Then <a href="https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers" target="_blank" rel="noopener" title="Wikipedia — Bankruptcy of Lehman Brothers">Lehman Brothers collapsed</a>. And Bleich took what he had learned about the plumbing and built his own machine.</p>
   </div>
@@ -1601,8 +1612,10 @@ blockquote cite {
       <p><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE Docket 12-0059</a> (January 2013) reveals what may be the most damning detail in the enforcement record. Scout Trading was fined $10,000 for failing on "numerous occasions" to provide and maintain two-sided 100-share quotes in its remote market-making assignment — a violation of CBOE Rule 53.23. Providing continuous two-sided liquidity is the defining obligation of a market maker. Scout was claiming market-maker privileges to obtain the T+6 settlement window while simultaneously failing to fulfill the only duty that justified those privileges. The CBOE's own enforcement record proves the exemption was fraudulently invoked.</p>
     </div>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The CBOE Trail: Three Fines, Three Dimensions of Failure</h3>
     <p class="reveal">The <a href="https://www.cboe.com/" target="_blank" rel="noopener" title="Cboe Global Markets">CBOE</a> actions did not stop there. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 12-0099</a> (June 2013) found that Scout had failed to designate a Chief Compliance Officer or maintain registration records — a $7,500 fine for running a regulated entity with no designated compliance officer on record. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 14-0018</a> (May 2014) imposed $5,000 for Regulation NMS trade-through violations. Three separate enforcement actions from a single exchange, each documenting a different dimension of the same operational posture: rules as obstacles to be circumvented, not constraints to be honored.</p>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">April 7, 2015: The $3,000,000 Reckoning</h3>
     <p class="reveal">On April 7, 2015, <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading / Wedbush">FINRA censured Scout Trading and imposed a $3,000,000 fine</a> — the capstone of a two-year enforcement accumulation. Wedbush Securities, the clearing firm that processed Scout's orders without adequate oversight, would later pay $675,000 in its own penalties.</p>
 
     <div class="table-wrapper reveal">
@@ -1676,11 +1689,16 @@ blockquote cite {
       </ol>
     </nav>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">2017–2020: The Interlude at Inferent Capital</h3>
     <p class="reveal">Between the dissolution of Ophir Partners and the formation of EntryPoint Capital, the record shows Bleich at Inferent Capital (2017–2020) as a Research Team Lead in machine learning and quantitative research — a transitional role at a firm he did not own. The interlude matters less for what Bleich did there than for what was happening in the background: the disclosure clock on his predecessor entities was running down. By the time EntryPoint Capital filed its first Form ADV, the dissolved firms were receding into archival obscurity — findable only by a searcher who already knew to look.</p>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The Mechanism: CRD 313946 Returns Clean</h3>
     <p class="reveal">The sequence matters because of what it accomplishes. Each time an entity carrying enforcement baggage is dissolved and a new entity is formed with a clean CRD number, the standard <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" title="FINRA BrokerCheck">FINRA BrokerCheck</a> and SEC IAPD searches run against the new number. The regulatory history does not transfer. The disclosure clock resets.</p>
 
-    <p class="reveal">Search EntryPoint Capital's CRD — 313946 — and the result is clean. No enforcement actions. No disciplinary proceedings. No material legal events. A compliance officer pulling Bleich's individual BrokerCheck report would find the Scout Trading connection — but only if the search began with Bleich the person, rather than EntryPoint the firm. The distinction is the mechanism. Institutional due diligence teams running entity-level screens will find nothing.</p>
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Finding: What a Standard Entity-Level Search Returns</div>
+      <p>Search EntryPoint Capital's CRD — 313946 — and the result is clean. No enforcement actions. No disciplinary proceedings. No material legal events. A compliance officer pulling Bleich's individual BrokerCheck report would find the Scout Trading connection — but only if the search began with Bleich the person, rather than EntryPoint the firm. The distinction is the mechanism. Institutional due diligence teams running entity-level screens will find nothing.</p>
+    </div>
 
     <div class="pull-quote reveal">
       <p>That is how $578 million in institutional capital came to be managed by an individual with $3 million in documented regulatory penalties — without the standard screening process catching it.</p>
@@ -1698,10 +1716,12 @@ blockquote cite {
   <div class="section-dek reveal">Form ADV Item 11: zero entries. The question the SEC's Division of Examinations is positioned to resolve.</div>
 
   <div class="section-body">
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:0 0 1rem;font-weight:700;color:var(--text-primary);">Item 11: The Blank Page</h3>
     <p class="reveal">EntryPoint Capital's Form ADV identifies Michael Bleich as a control person through his indirect ownership via EntryPoint Partners, LP. The same Form ADV contains zero Item 11 disclosures — the section where disciplinary history, regulatory actions, and material legal proceedings involving the adviser or its control persons are catalogued.</p>
 
     <p class="reveal">The $3 million FINRA fine was levied against an entity Bleich founded and controlled. Whether the entity dissolution pattern creates a technical basis for non-disclosure — or whether Item 11 requires disclosure of a control person's regulatory history at predecessor entities — is a question the SEC's Division of Examinations is positioned to resolve. What is not in question is the information asymmetry: pension funds, endowments, and family offices allocating capital to EntryPoint's Third Moment strategy are making decisions without access to the complete enforcement record of the individual who controls their capital.</p>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">$578M AUM: What's Visible and What's Not</h3>
     <div class="evidence-box reveal">
       <div class="evidence-box-title">Evidence: Capital Structure Breakdown</div>
       <p>$578,038,743 in regulatory assets under management. $256,342,753 in 13F-reportable equity holdings. The difference — $321,695,990 — sits in instruments not subject to position-level public disclosure: cash, short positions, fixed income, OTC derivatives, and the offshore Cayman capital. That non-reportable component represents 55.6 percent of the total fund.</p>
@@ -1720,6 +1740,7 @@ blockquote cite {
       <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--mono-color);">639</div><div class="et-label">Equity Positions</div></div>
     </div>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The Cayman Master-Feeder: Standard Structure, Elevated Proportion</h3>
     <p class="reveal">The Cayman component flows through a standard master-feeder architecture — three vehicles, two jurisdictions, one master fund where all capital commingles:</p>
 
     <div class="arch-table reveal" style="overflow-x:auto;">
@@ -1737,6 +1758,7 @@ blockquote cite {
 
     <p class="reveal">Cayman master-feeder structures are standard institutional architecture. Bridgewater, Citadel, and Two Sigma deploy identical frameworks. The structure alone is not notable. The proportion is. Among funds of comparable size and strategy type, a non-reportable ratio exceeding 50 percent is elevated. It does not imply wrongdoing. But for a fund whose owner has a documented history of operating at the boundaries of regulatory disclosure, the opacity takes on a contextual weight it would not carry elsewhere.</p>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">4.73% vs. 22.1%: The Performance Question</h3>
     <p class="reveal"><strong class="mono-num">4.73 percent.</strong> That is EntryPoint's three-year annualized return on its 13F equity portfolio (Q4 2022–Q4 2025), with a Q4 2025 incremental return of just 0.27 percent. The S&P 500 returned 22.1 percent over the same period — a gap of 17.37 percentage points annually. The 13F portfolio captures only the reportable equity sleeve, roughly half the fund; the non-reportable components may perform differently. But for the visible portion of a $578 million fund charging institutional fees on a Cayman master-feeder structure, the numbers ask a question the governance architecture cannot answer.</p>
   </div>
 </div>
@@ -1762,7 +1784,13 @@ blockquote cite {
       <p>When Jose Marques departed EntryPoint in February 2022 to become CEO of Intech Investment Management, Leibowitz assumed the EntryPoint CEO role. Leibowitz was subsequently appointed to Intech's board — the firm where his predecessor now leads. Reciprocal governance arrangements are common in institutional finance, but they invite scrutiny at any firm where the separation of economic interest from operational authority is already a live issue.</p>
     </div>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">Andrew Alkon: One Person, Three Control Functions</h3>
     <p class="reveal">One additional structural detail warrants examination. EntryPoint's Form ADV identifies Andrew Alkon as simultaneously holding the roles of Chief Compliance Officer, Chief Operating Officer, and Chief Financial Officer. At a $578 million fund, the compliance function exists to provide independent oversight of operations and finance — the very functions Alkon also runs. The three-role concentration eliminates the structural independence that compliance is designed to provide. For a firm whose founder built and operated Scout Trading with zero written supervisory procedures, the design choice is familiar.</p>
+
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Finding: Compliance Independence — Scout Trading vs. EntryPoint Capital</div>
+      <p>At Scout Trading (2009–2015): zero written supervisory procedures. Zero designated Chief Compliance Officer (CBOE Docket 12-0099, June 2013). At EntryPoint Capital (2016–present): the CCO simultaneously serves as COO and CFO — overseeing the operations and finances he is structurally required to audit. The compliance function exists on paper. Its independence does not.</p>
+    </div>
   </div>
 </div>
 </section>
@@ -1773,12 +1801,15 @@ blockquote cite {
   <div class="section-heading reveal">
     <h2>The Bleich Debt Chain: From Corporate Default to Personal Lien</h2>
   </div>
-  <div class="section-dek reveal">$2,233,007. A promissory note at 10% interest. A default at 15%. A UCC-1 lien on the family home in Tribeca.</div>
+  <div class="section-dek reveal">$2,233,007. A promissory note at 10% interest. A default at 15%. A UCC-1 lien on the family residence.</div>
 
   <div class="section-body">
-    <p class="reveal"><strong class="mono-num">$2,233,007.</strong> That is the principal on the promissory note Michael and Alexis Bleich signed to <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — New York State Courts Electronic Filing">OPEH LLC</a> on January 11, 2018 — bearing interest at 10 percent per annum, compounded annually, with a default rate of 15 percent. The note was secured by a UCC-1 lien on their <a href="https://www.realtyhop.com/property-records/search?q=bleich+his+wife+alexis+k" target="_blank" rel="noopener" title="RealtyHop — Bleich property records">13 Harrison Street residence</a> — the same Tribeca condo purchased for $3.6 million in 2007.</p>
+    <p class="reveal"><strong class="mono-num">$2,233,007.</strong> That is the principal on the promissory note Michael and Alexis Bleich signed to <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — New York State Courts Electronic Filing">OPEH LLC</a> on January 11, 2018 — bearing interest at 10 percent per annum, compounded annually, with a default rate of 15 percent. The note was secured by a UCC-1 lien on the couple's residential property in lower Manhattan — the same Tribeca condo purchased for $3.6 million in 2007.</p>
 
-    <p class="reveal">The note's origin is the key. It was tendered "in connection with the satisfaction and discharge of the corporate obligation of Ophir Partners, LLC." The Bleiches personally assumed more than $2.2 million in debt that belonged to their defunct hedge fund — the entity dissolved because Scout Trading's regulatory contagion had made continued SEC registration untenable.</p>
+    <div class="evidence-box reveal">
+      <div class="evidence-box-title">Finding: The Regulatory-to-Personal Debt Pipeline</div>
+      <p>The note was tendered "in connection with the satisfaction and discharge of the corporate obligation of Ophir Partners, LLC." Ophir Partners withdrew its SEC registration after structural contagion from Scout Trading — the entity sanctioned with the $3,000,000 FINRA fine — made continued registration untenable. The Bleiches personally assumed more than $2.2 million in corporate debt that originated in the regulatory consequences of the naked short selling scheme.</p>
+    </div>
 
     <p class="reveal">They defaulted on September 1, 2018. Accrued interest: $155,070. OPEH LLC filed suit (<a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Search Index No. 654791/2018">Index No. 654791/2018</a>) seeking $2,388,077. The case was discontinued by stipulation in December 2018, but the underlying obligation — compounding at the default rate — has not been publicly resolved.</p>
 
@@ -1804,6 +1835,7 @@ blockquote cite {
 
     <p class="reveal">Giacovas is Michael Bleich's lead litigator. He represents the Bleiches in their current property dispute (Index No. 155721/2024) through his firm, Lazare Potter Giacovas & Moyle LLP. In February 2026, the New Jersey Lawyers' Fund for Client Protection confirmed him ineligible for pro hac vice admission.</p>
 
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">Lynn Ellen Judell: Suspended Since July 2024, Still Filing in June 2024</h3>
     <p class="reveal">His co-counsel is Lynn Ellen Judell of Rukab Brash PLLC (California Bar #114924). Judell's California Bar license has been suspended since July 2, 2024. The State Bar has issued a formal Consumer Alert regarding her status. She carries a prior 2006 administrative suspension. She appeared as co-counsel on the June 21, 2024 memorandum of law in Bleich's preliminary injunction motion — eleven days before her suspension became effective. She is also listed on the New Jersey PHV ineligibility list.</p>
 
     <div class="evidence-box reveal">
