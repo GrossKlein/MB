@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #FAFAF7;
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+    display: flex;
+  }
+
+  /* Paper texture */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.045;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    background-size: 256px;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* ---- LEFT PANEL: editorial text ---- */
+  .left {
+    flex: 0 0 620px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .accent-bar {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 5px;
+    background: #B81C1C;
+    z-index: 5;
+  }
+
+  .classification {
+    padding: 20px 42px 0;
+    font-size: 8.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #959088;
+    margin-top: 5px;
+  }
+
+  .left-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px 42px 0 42px;
+  }
+
+  .kicker {
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #B81C1C;
+    margin-bottom: 12px;
+    border-top: 1px solid #2A2A2A;
+    padding-top: 12px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 82px;
+    font-weight: 900;
+    line-height: 0.91;
+    letter-spacing: -0.03em;
+    color: #1A1A1A;
+    margin-bottom: 18px;
+  }
+
+  .subhead {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4A4A4A;
+    max-width: 490px;
+    margin-bottom: 20px;
+  }
+
+  /* 2×2 stat grid */
+  .stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid #D5D0C6;
+  }
+
+  .stat {
+    padding: 13px 16px 11px;
+    border-right: 1px solid #D5D0C6;
+    border-bottom: 1px solid #D5D0C6;
+    background: #FFFFFF;
+  }
+  .stat:nth-child(2) { border-right: none; }
+  .stat:nth-child(3) { border-bottom: none; border-right: 1px solid #D5D0C6; }
+  .stat:nth-child(4) { border-bottom: none; border-right: none; }
+
+  .stat-number {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 23px;
+    font-weight: 600;
+    color: #B81C1C;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .stat-number.zero {
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .stat-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #7A7770;
+    line-height: 1.4;
+  }
+
+  /* Footer */
+  .footer-bar {
+    height: 40px;
+    background: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 42px;
+    flex-shrink: 0;
+  }
+  .footer-left {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #E8E6E1;
+  }
+  .footer-right {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #B81C1C;
+  }
+
+  /* ---- RIGHT PANEL: photo ---- */
+  .right {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #0A0A0A;
+  }
+
+  .photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+    display: block;
+    filter: grayscale(100%) contrast(1.08) brightness(0.92);
+  }
+
+  /* Left fade blend into card */
+  .right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #FAFAF7 0%, transparent 22%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  /* Bottom vignette */
+  .right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 45%);
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  /* CRD badge */
+  .photo-badge {
+    position: absolute;
+    bottom: 48px;
+    right: 22px;
+    z-index: 5;
+    text-align: right;
+  }
+  .photo-badge span {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    display: block;
+    line-height: 2;
+  }
+
+  /* Subject name overlay at bottom of photo */
+  .photo-name {
+    position: absolute;
+    bottom: 48px;
+    left: 28px;
+    z-index: 5;
+  }
+  .photo-name-primary {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 900;
+    color: rgba(255,255,255,0.85);
+    letter-spacing: 0.02em;
+    display: block;
+    line-height: 1.3;
+  }
+  .photo-name-sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 7.5px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.45);
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* Thin red rule at right panel top */
+  .right-accent {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: #B81C1C;
+    z-index: 6;
+  }
+</style>
+</head>
+<body>
+
+<!-- LEFT PANEL -->
+<div class="left">
+  <div class="accent-bar"></div>
+  <div class="classification">Investigative Report &nbsp;·&nbsp; Financial Regulation &nbsp;·&nbsp; Due Diligence</div>
+  <div class="left-content">
+    <div>
+      <div class="kicker">Michael Bleich &amp; EntryPoint Capital</div>
+      <div class="headline">The<br>Phantom<br>Shares</div>
+      <div class="subhead">How a Lehman Brothers veteran built a $578M fund on the ashes of a $3M naked short selling scandal — and why his investors may not know.</div>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number">$578M</div>
+        <div class="stat-label">Assets Under<br>Management</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">$3.7M</div>
+        <div class="stat-label">Enforcement<br>Penalties</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">295.9M</div>
+        <div class="stat-label">Phantom<br>Shares</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number zero">ZERO</div>
+        <div class="stat-label">Item 11<br>Disclosures</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span class="footer-left">An Investigative Report · September 2025</span>
+    <span class="footer-right">FINRA · SEC · CBOE · NYSCEF</span>
+  </div>
+</div>
+
+<!-- RIGHT PANEL -->
+<div class="right">
+  <div class="right-accent"></div>
+  <img class="photo" src="bMiBl.png" alt="Michael Edward Bleich">
+  <div class="photo-name">
+    <span class="photo-name-primary">Michael Edward Bleich</span>
+    <span class="photo-name-sub">Chief Investment Officer — EntryPoint Capital</span>
+  </div>
+  <div class="photo-badge">
+    <span>CRD# 4262671</span>
+    <span>CRD# 313946</span>
+  </div>
+</div>
+
+</body>
+</html>
