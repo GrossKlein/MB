@@ -8,24 +8,23 @@
 <meta property="og:title" content="The Phantom Shares: Michael Bleich &amp; EntryPoint Capital">
 <meta property="og:description" content="How Lehman Brothers veteran Michael Bleich built a $578M fund after a $3M naked short selling scandal — and why his investors may not know.">
 <meta property="og:type" content="article">
-<!-- TODO: Replace with actual 1200x630 social card image URL before publication -->
-<meta property="og:image" content="https://your-domain.com/assets/phantom-shares-social-card.png">
+<meta property="og:image" content="bMiBl.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="The Phantom Shares: Michael Bleich &amp; EntryPoint Capital — Investigative Report">
-<meta property="article:published_time" content="2026-03-01">
+<meta property="article:published_time" content="2025-09-09">
 <meta name="robots" content="index, follow">
-<!-- TODO: Set canonical URL before publication -->
-<!-- <link rel="canonical" href="https://your-domain.com/phantom-shares"> -->
+<link rel="canonical" href="https://your-domain.com/phantom-shares">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "NewsArticle",
   "headline": "The Phantom Shares: How Michael Bleich Built a $578 Million Fund on the Ashes of a $3 Million Naked Short Selling Scandal",
-  "datePublished": "2026-03-01",
+  "datePublished": "2025-09-09",
   "description": "Investigative report on Michael Edward Bleich (CRD# 4262671), CIO of EntryPoint Capital.",
   "about": [
     {
@@ -43,1334 +42,6 @@
   ]
 }
 </script>
-<style>
-/* ============================================
-   CSS CUSTOM PROPERTIES — THEME SYSTEM
-   ============================================ */
-:root {
-  /* Light theme (default) */
-  --bg-primary: #FAFAF7;
-  --bg-secondary: #F3F1EB;
-  --bg-tertiary: #EBE8E0;
-  --text-primary: #1A1A1A;
-  --text-secondary: #4A4A4A;
-  --text-tertiary: #595959; /* was #6B6B6B — darkened to pass WCAG AA 4.5:1 on #FAFAF7 */
-  --accent-red: #B81C1C;
-  --accent-red-bg: rgba(184, 28, 28, 0.06);
-  --accent-gold: #8B7225;
-  --accent-gold-bg: rgba(139, 114, 37, 0.06);
-  --accent-moderate: #5A6B3C;
-  --accent-moderate-bg: rgba(90, 107, 60, 0.06);
-  --rule-color: #2A2A2A;
-  --rule-light: #D5D0C6;
-  --evidence-bg: #F0EDE6;
-  --evidence-border: #C9C3B5;
-  --mono-color: #4A5568;
-  --card-bg: #FFFFFF;
-  --card-border: #D5D0C6;
-  --card-shadow: 0 1px 3px rgba(0,0,0,0.06);
-  --nav-bg: rgba(250, 250, 247, 0.92);
-  --nav-dot: #C9C3B5;
-  --nav-dot-active: #B81C1C;
-  --progress-bg: rgba(0,0,0,0.06);
-  --progress-fill: #B81C1C;
-  --blockquote-border: #B81C1C;
-  --table-header-bg: #1A1A1A;
-  --table-header-text: #FAFAF7;
-  --table-stripe: #F7F5F0;
-  --table-border: #D5D0C6;
-  --toggle-bg: #E8E5DD;
-  --toggle-icon: #4A4A4A;
-  --footer-bg: #1A1A1A;
-  --footer-text: #A0A0A0;
-  --footer-heading: #E8E6E1;
-  --stat-number: #B81C1C;
-  --photo-placeholder-bg: #E8E5DD;
-  --photo-placeholder-border: #C9C3B5;
-  --severity-critical: #B81C1C;
-  --severity-high: #8B7225;
-  --severity-moderate: #5A6B3C;
-  --badge-critical-bg: rgba(184, 28, 28, 0.1);
-  --badge-high-bg: rgba(139, 114, 37, 0.1);
-  --badge-moderate-bg: rgba(90, 107, 60, 0.1);
-  --texture-opacity: 0.03;
-}
-
-[data-theme="dark"] {
-  --bg-primary: #0F0F0F;
-  --bg-secondary: #161614;
-  --bg-tertiary: #1E1D1A;
-  --text-primary: #E8E6E1;
-  --text-secondary: #B0ADA5;
-  --text-tertiary: #7A7770;
-  --accent-red: #E63946;
-  --accent-red-bg: rgba(230, 57, 70, 0.08);
-  --accent-gold: #D4A843;
-  --accent-gold-bg: rgba(212, 168, 67, 0.08);
-  --accent-moderate: #8BA85E;
-  --accent-moderate-bg: rgba(139, 168, 94, 0.08);
-  --rule-color: #3A3A3A;
-  --rule-light: #2A2825;
-  --evidence-bg: #1A1916;
-  --evidence-border: #33302A;
-  --mono-color: #8B95A5;
-  --card-bg: #161614;
-  --card-border: #2A2825;
-  --card-shadow: 0 1px 3px rgba(0,0,0,0.3);
-  --nav-bg: rgba(15, 15, 15, 0.92);
-  --nav-dot: #3A3A3A;
-  --nav-dot-active: #E63946;
-  --progress-bg: rgba(255,255,255,0.06);
-  --progress-fill: #E63946;
-  --blockquote-border: #E63946;
-  --table-header-bg: #1E1D1A;
-  --table-header-text: #E8E6E1;
-  --table-stripe: #141312;
-  --table-border: #2A2825;
-  --toggle-bg: #2A2825;
-  --toggle-icon: #B0ADA5;
-  --footer-bg: #080808;
-  --footer-text: #6B6B6B;
-  --footer-heading: #B0ADA5;
-  --stat-number: #E63946;
-  --photo-placeholder-bg: #1E1D1A;
-  --photo-placeholder-border: #33302A;
-  --severity-critical: #E63946;
-  --severity-high: #D4A843;
-  --severity-moderate: #8BA85E;
-  --badge-critical-bg: rgba(230, 57, 70, 0.12);
-  --badge-high-bg: rgba(212, 168, 67, 0.12);
-  --badge-moderate-bg: rgba(139, 168, 94, 0.12);
-  --texture-opacity: 0.015;
-}
-
-/* ============================================
-   RESET & BASE
-   ============================================ */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
-  font-size: 16px;
-}
-
-body {
-  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
-  font-size: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-  line-height: 1.72;
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color 0.4s ease, color 0.4s ease;
-  overflow-x: hidden;
-}
-
-/* Paper texture overlay */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  pointer-events: none;
-  z-index: 1; /* was 9999 — lowered to avoid interfering with assistive tech and stacking context */
-  opacity: var(--texture-opacity);
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  background-size: 256px;
-}
-
-a { color: var(--accent-red); text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* Focus-visible styles for keyboard accessibility */
-a:focus-visible,
-button:focus-visible,
-[tabindex]:focus-visible {
-  outline: 2px solid var(--accent-red);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-.side-nav-item:focus-visible {
-  outline: 2px solid var(--accent-red);
-  outline-offset: 4px;
-}
-.side-nav-item:focus-visible .side-nav-label {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* External link indicator for target="_blank" links */
-a[target="_blank"]::after {
-  content: '\2009\2197'; /* thin space + north-east arrow */
-  font-size: 0.7em;
-  vertical-align: super;
-  line-height: 0;
-  opacity: 0.5;
-}
-/* Suppress the indicator in specific contexts where it clutters */
-.profile-highlight a[target="_blank"]::after,
-.hero-subject-line a[target="_blank"]::after,
-.footer-sources a[target="_blank"]::after,
-.et-number a[target="_blank"]::after,
-.entity-crd a[target="_blank"]::after { display: none; }
-
-img { max-width: 100%; height: auto; display: block; }
-
-/* Skip to content */
-.skip-link {
-  position: absolute;
-  top: -100%;
-  left: 1rem;
-  padding: 0.5rem 1rem;
-  background: var(--accent-red);
-  color: #fff;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
-  z-index: 10001;
-  border-radius: 0 0 4px 4px;
-}
-.skip-link:focus { top: 0; }
-
-/* ============================================
-   TYPOGRAPHY
-   ============================================ */
-h1, h2, h3, h4 {
-  font-family: 'Playfair Display', Georgia, serif;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-}
-h1, h2 { font-weight: 900; }
-h3, h4 { font-weight: 700; } /* was 900 — differentiated for visual hierarchy */
-
-.mono {
-  font-family: 'IBM Plex Mono', 'Courier New', monospace;
-  font-weight: 500;
-  color: var(--mono-color);
-}
-
-.mono-num {
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 600;
-  color: var(--stat-number);
-  letter-spacing: -0.02em;
-}
-
-/* ============================================
-   PROGRESS BAR
-   ============================================ */
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  background: var(--progress-fill);
-  z-index: 10000;
-  transition: width 0.1s linear;
-}
-
-/* ============================================
-   THEME TOGGLE
-   ============================================ */
-.theme-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  z-index: 9998;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--rule-light);
-  background: var(--toggle-bg);
-  color: var(--toggle-icon);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: background 0.3s, border-color 0.3s, transform 0.2s;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.theme-toggle:hover { transform: scale(1.08); }
-.theme-toggle:active { transform: scale(0.95); }
-.theme-toggle svg { width: 20px; height: 20px; fill: currentColor; }
-
-/* ============================================
-   SIDE NAVIGATION (Desktop)
-   ============================================ */
-.side-nav {
-  position: fixed;
-  left: 1.25rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 9997;
-  display: none;
-  flex-direction: column;
-  gap: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.side-nav.visible { opacity: 1; }
-.side-nav-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.4rem 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--text-tertiary);
-  transition: color 0.2s;
-}
-.side-nav-item:hover { color: var(--text-primary); text-decoration: none; }
-.side-nav-item.active { color: var(--accent-red); }
-.side-nav-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--nav-dot);
-  flex-shrink: 0;
-  transition: background 0.3s, transform 0.2s;
-}
-.side-nav-item.active .side-nav-dot {
-  background: var(--nav-dot-active);
-  transform: scale(1.4);
-}
-.side-nav-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  opacity: 0;
-  transform: translateX(-4px);
-  transition: opacity 0.2s, transform 0.2s;
-}
-.side-nav-item:hover .side-nav-label,
-.side-nav-item.active .side-nav-label {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-/* ============================================
-   MOBILE NAVIGATION
-   ============================================ */
-.mobile-nav-toggle {
-  display: none;
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: 9998;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  border: 1px solid var(--rule-light);
-  background: var(--nav-bg);
-  color: var(--text-primary);
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  transition: transform 0.2s;
-}
-.mobile-nav-toggle:active { transform: scale(0.92); }
-
-.mobile-nav-drawer {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background: var(--nav-bg);
-  border-top: 1px solid var(--rule-light);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 1rem 1.25rem 2rem;
-  transform: translateY(100%);
-  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
-  max-height: 70vh;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: 16px 16px 0 0;
-}
-.mobile-nav-drawer.open { transform: translateY(0); }
-.mobile-nav-drawer a {
-  display: block;
-  padding: 0.6rem 0;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-secondary);
-  text-decoration: none;
-  border-bottom: 1px solid var(--rule-light);
-  letter-spacing: 0.02em;
-}
-.mobile-nav-drawer a:last-child { border-bottom: none; }
-.mobile-nav-drawer a.active { color: var(--accent-red); }
-.mobile-nav-drawer a:hover { color: var(--text-primary); }
-.drawer-close {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.drawer-handle {
-  width: 36px;
-  height: 4px;
-  background: var(--rule-light);
-  border-radius: 2px;
-}
-
-.mobile-nav-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 9998;
-  background: rgba(0,0,0,0.3);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.mobile-nav-overlay.open { opacity: 1; }
-
-/* Back to top */
-.back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 4.5rem;
-  right: 1rem;
-  z-index: 9997;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--rule-light);
-  background: var(--nav-bg);
-  color: var(--text-secondary);
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  opacity: 0;
-  pointer-events: none; /* prevent click ghost when invisible */
-  transition: opacity 0.3s, transform 0.2s;
-}
-.back-to-top.visible { opacity: 1; pointer-events: auto; }
-.back-to-top:active { transform: scale(0.92); }
-
-/* ============================================
-   LAYOUT
-   ============================================ */
-.container {
-  width: 100%;
-  max-width: 740px;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
-.section {
-  padding: 3.5rem 0;
-  border-bottom: 1px solid var(--rule-light);
-}
-.section:last-of-type { border-bottom: none; }
-
-/* ============================================
-   HERO
-   ============================================ */
-.hero {
-  min-height: 100vh;
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6rem 0 4rem;
-  border-bottom: 3px double var(--rule-color);
-  position: relative;
-}
-.hero-dateline {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-tertiary);
-  margin-bottom: 2rem;
-}
-.hero h1 {
-  font-size: clamp(2.4rem, 2rem + 2.5vw, 4.2rem);
-  font-weight: 900;
-  line-height: 1.05;
-  margin-bottom: 1.25rem;
-  letter-spacing: -0.02em;
-}
-.hero-subtitle {
-  font-family: 'Source Serif 4', serif;
-  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
-  font-weight: 400;
-  font-style: italic;
-  line-height: 1.45;
-  color: var(--text-secondary);
-  max-width: 600px;
-  margin-bottom: 0.75rem;
-}
-.hero-subtitle-secondary {
-  font-family: 'Source Serif 4', serif;
-  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.1rem);
-  font-style: italic;
-  color: var(--text-tertiary);
-  margin-bottom: 2.5rem;
-}
-.hero-subject-line {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--rule-light);
-}
-.hero-subject-line strong {
-  color: var(--text-secondary);
-  font-weight: 600;
-}
-
-/* ============================================
-   STAT CALLOUTS
-   ============================================ */
-.stat-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin: 2.5rem 0;
-}
-.stat-box {
-  padding: 1.25rem;
-  border: 1px solid var(--rule-light);
-  background: var(--card-bg);
-}
-.stat-number {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(1.6rem, 1.4rem + 1vw, 2.2rem);
-  font-weight: 600;
-  color: var(--stat-number);
-  line-height: 1.1;
-  margin-bottom: 0.4rem;
-  letter-spacing: -0.02em;
-}
-.stat-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  line-height: 1.4;
-}
-
-/* Violation metrics — compact 4x2 grid */
-.violation-metrics {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  margin: 2rem 0;
-  border: 1px solid var(--rule-light);
-}
-.vm-cell {
-  padding: 1rem 0.75rem;
-  text-align: center;
-  border-right: 1px solid var(--rule-light);
-  border-bottom: 1px solid var(--rule-light);
-  background: var(--card-bg);
-}
-.vm-cell:nth-child(4),
-.vm-cell:nth-child(8) { border-right: none; }
-.vm-cell:nth-child(n+5) { border-bottom: none; }
-.vm-number {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
-  font-weight: 600;
-  color: var(--stat-number);
-  line-height: 1.2;
-  margin-bottom: 0.2rem;
-}
-.vm-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; /* was 0.58rem — raised for legibility */
-  font-weight: 500;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.3;
-}
-@media (max-width: 480px) {
-  .violation-metrics { grid-template-columns: repeat(2, 1fr); }
-  .vm-cell:nth-child(2),
-  .vm-cell:nth-child(4),
-  .vm-cell:nth-child(6),
-  .vm-cell:nth-child(8) { border-right: none; }
-  .vm-cell:nth-child(n+5) { border-bottom: 1px solid var(--rule-light); }
-  .vm-cell:nth-child(n+7) { border-bottom: none; }
-}
-
-/* Enforcement total bar */
-.enforcement-total {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0;
-  margin: 1.5rem 0 2rem;
-  border: 2px solid var(--accent-red);
-}
-.et-cell {
-  padding: 0.9rem 0.75rem;
-  text-align: center;
-  border-right: 1px solid var(--rule-light);
-  background: var(--accent-red-bg);
-}
-.et-cell:last-child { border-right: none; }
-.et-number {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
-  font-weight: 600;
-  color: var(--accent-red);
-  line-height: 1.2;
-  margin-bottom: 0.15rem;
-}
-.et-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; /* was 0.58rem — raised for legibility */
-  font-weight: 500;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-@media (max-width: 400px) {
-  .enforcement-total { grid-template-columns: 1fr; }
-  .et-cell { border-right: none; border-bottom: 1px solid var(--rule-light); }
-  .et-cell:last-child { border-bottom: none; }
-}
-
-/* Cayman architecture table */
-.arch-table {
-  margin: 2rem 0;
-  border: 1px solid var(--table-border);
-}
-.arch-table table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.8rem;
-  line-height: 1.5;
-}
-.arch-table th {
-  background: var(--table-header-bg);
-  color: var(--table-header-text);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.6rem 0.7rem;
-  text-align: left;
-}
-.arch-table td {
-  padding: 0.55rem 0.7rem;
-  border-bottom: 1px solid var(--table-border);
-  vertical-align: top;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.75rem;
-}
-.arch-table tr:nth-child(even) td { background: var(--table-stripe); }
-
-/* AUM quarterly row */
-.aum-quarters {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  margin: 1.5rem 0;
-  border: 1px solid var(--rule-light);
-}
-.aq-cell {
-  padding: 0.9rem 0.5rem;
-  text-align: center;
-  border-right: 1px solid var(--rule-light);
-  background: var(--card-bg);
-}
-.aq-cell:last-child { border-right: none; }
-.aq-number {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: clamp(0.95rem, 0.85rem + 0.4vw, 1.15rem);
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 0.15rem;
-}
-.aq-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; /* was 0.58rem — raised for legibility */
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-@media (max-width: 400px) {
-  .aum-quarters { grid-template-columns: repeat(2, 1fr); }
-  .aq-cell:nth-child(2) { border-right: none; }
-  .aq-cell:nth-child(1), .aq-cell:nth-child(2) { border-bottom: 1px solid var(--rule-light); }
-}
-
-/* ============================================
-   PROFILE CARDS
-   ============================================ */
-.profile-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-.profile-card {
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 1.25rem;
-  padding: 1.5rem;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  box-shadow: var(--card-shadow);
-}
-.profile-photo {
-  width: 120px;
-  height: 150px;
-  background: var(--photo-placeholder-bg);
-  border: 1px dashed var(--photo-placeholder-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-.profile-photo--image {
-  background: none;
-  border: 1px solid var(--card-border);
-  overflow: hidden;
-  padding: 0;
-}
-.profile-photo--image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  filter: grayscale(100%); /* full grayscale — editorial photography convention */
-  transition: filter 0.4s ease;
-}
-.profile-photo--image img:hover {
-  filter: grayscale(0%);
-}
-@media (prefers-reduced-motion: reduce) {
-  .profile-photo--image img { transition: none; }
-}
-.profile-photo-label {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.6rem;
-  color: var(--text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.profile-photo svg {
-  width: 28px;
-  height: 28px;
-  stroke: var(--text-tertiary);
-  fill: none;
-  stroke-width: 1.5;
-}
-.profile-info h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-  line-height: 1.25;
-}
-.profile-role {
-  font-family: 'Source Serif 4', serif;
-  font-size: 0.88rem;
-  font-style: italic;
-  color: var(--text-secondary);
-  margin-bottom: 0.75rem;
-}
-.profile-detail {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem;
-  line-height: 1.8;
-  letter-spacing: 0.01em; /* monospace compensation for dense CRD/date strings */
-  color: var(--text-secondary);
-}
-.profile-detail strong {
-  color: var(--text-primary);
-  font-weight: 600;
-  display: inline-block;
-  min-width: 70px;
-}
-.profile-highlight {
-  margin-top: 0.75rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--rule-light);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--accent-red);
-  line-height: 1.6;
-}
-
-/* ============================================
-   SECTION HEADINGS
-   ============================================ */
-.section-heading {
-  margin-bottom: 0.4rem;
-}
-.section-heading h2 {
-  font-size: clamp(1.7rem, 1.5rem + 1.2vw, 2.6rem);
-  line-height: 1.12;
-  letter-spacing: -0.015em;
-  margin-bottom: 0.6rem;
-}
-.section-dek {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.78rem;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  line-height: 1.6;
-  letter-spacing: 0.01em;
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--rule-light);
-}
-
-.section-body p {
-  margin-bottom: 1.25rem;
-  max-width: 65ch; /* optimal reading line length */
-  text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-.section-body p:last-child { margin-bottom: 0; }
-
-/* ============================================
-   EVIDENCE BOXES
-   ============================================ */
-.evidence-box {
-  margin: 2rem 0;
-  padding: 1.25rem 1.5rem;
-  background: var(--evidence-bg);
-  border-left: 3px solid var(--evidence-border);
-}
-.evidence-box-title {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-tertiary);
-  margin-bottom: 0.6rem;
-}
-.evidence-box p {
-  font-size: 0.92rem;
-  line-height: 1.65;
-  color: var(--text-secondary);
-  text-align: justify;
-  -webkit-hyphens: auto;
-  hyphens: auto;
-}
-
-/* ============================================
-   BLOCKQUOTES
-   ============================================ */
-blockquote {
-  margin: 2rem 0;
-  padding: 1.25rem 1.5rem;
-  border-left: 3px solid var(--blockquote-border);
-  font-style: italic;
-  color: var(--text-secondary);
-  background: var(--accent-red-bg);
-}
-blockquote cite {
-  display: block;
-  margin-top: 0.75rem;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  font-style: normal;
-  font-weight: 500;
-  color: var(--text-tertiary);
-}
-
-/* ============================================
-   PULL QUOTES
-   ============================================ */
-.pull-quote {
-  margin: 2.5rem 0;
-  padding: 1.5rem 0;
-  border-top: 2px solid var(--rule-color);
-  border-bottom: 2px solid var(--rule-color);
-}
-.pull-quote p {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.15rem, 1rem + 0.5vw, 1.4rem);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.45;
-  color: var(--text-primary);
-  text-align: center;
-}
-
-/* ============================================
-   DATA TABLES
-   ============================================ */
-.table-wrapper {
-  margin: 2rem 0;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border: 1px solid var(--table-border);
-}
-.table-wrapper table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82rem;
-  line-height: 1.5;
-  min-width: 580px;
-}
-.table-wrapper th {
-  background: var(--table-header-bg);
-  color: var(--table-header-text);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.7rem 0.9rem;
-  text-align: left;
-  white-space: nowrap;
-}
-.table-wrapper td {
-  padding: 0.65rem 0.9rem;
-  border-bottom: 1px solid var(--table-border);
-  vertical-align: top;
-}
-.table-wrapper tr:nth-child(even) td {
-  background: var(--table-stripe);
-}
-
-/* Severity badges in tables */
-.severity {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  padding: 0.2rem 0.5rem;
-  border-radius: 2px;
-  white-space: nowrap;
-  display: inline-block;
-}
-.severity-critical { background: var(--badge-critical-bg); color: var(--severity-critical); }
-.severity-high { background: var(--badge-high-bg); color: var(--severity-high); }
-.severity-moderate { background: var(--badge-moderate-bg); color: var(--severity-moderate); }
-
-/* Severity summary badges */
-.severity-summary {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin: 1.25rem 0 2rem;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.severity-summary span {
-  padding: 0.35rem 0.75rem;
-  border-radius: 2px;
-}
-.severity-summary .sc { background: var(--badge-critical-bg); color: var(--severity-critical); }
-.severity-summary .sh { background: var(--badge-high-bg); color: var(--severity-high); }
-.severity-summary .sm { background: var(--badge-moderate-bg); color: var(--severity-moderate); }
-
-/* ============================================
-   ENTITY TIMELINE (Dissolution Pattern)
-   ============================================ */
-.entity-timeline {
-  margin: 2.5rem 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden; /* contain the fade masks */
-}
-/* Scroll affordance: gradient fade on right edge signals more content */
-.entity-timeline::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 48px;
-  background: linear-gradient(to right, transparent, var(--bg-primary));
-  pointer-events: none;
-  z-index: 2;
-  opacity: 1;
-  transition: opacity 0.3s;
-}
-.entity-timeline::before {
-  content: '';
-  position: absolute;
-  top: 24px;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--rule-light);
-}
-.entity-timeline-items {
-  display: flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  gap: 0;
-  padding-bottom: 0.5rem;
-  list-style: none;
-  margin: 0;
-}
-.entity-item {
-  flex: 0 0 auto;
-  width: 150px;
-  text-align: center;
-  position: relative;
-  padding-top: 2.5rem;
-}
-.entity-item::before {
-  content: '';
-  position: absolute;
-  top: 18px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid var(--accent-red);
-  background: var(--bg-primary);
-  z-index: 1;
-}
-.entity-item.defunct::before { background: var(--accent-red); }
-.entity-item.active::before { background: var(--accent-gold); border-color: var(--accent-gold); }
-.entity-name {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 0.15rem;
-}
-.entity-dates {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.62rem;
-  color: var(--text-tertiary);
-  margin-bottom: 0.15rem;
-}
-.entity-crd {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; /* was 0.58rem — raised for legibility */
-  color: var(--mono-color);
-}
-.entity-status {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem; /* was 0.58rem — raised for legibility */
-  font-weight: 600;
-  margin-top: 0.2rem;
-}
-.entity-status.defunct { color: var(--accent-red); }
-.entity-status.active { color: var(--accent-gold); }
-
-/* Arrow connectors */
-.entity-arrow {
-  flex: 0 0 auto;
-  width: 40px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 19px;
-  color: var(--text-tertiary);
-  font-size: 1rem;
-}
-
-/* ============================================
-   TWO-COLUMN COMPARISON
-   ============================================ */
-.comparison {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-.comparison-col {
-  padding: 1.25rem;
-  border: 1px solid var(--card-border);
-  background: var(--card-bg);
-}
-.comparison-col h4 {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.72rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 1rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 2px solid var(--rule-light);
-}
-.comparison-col.against h4 { border-bottom-color: var(--accent-red); color: var(--accent-red); }
-.comparison-col.for h4 { border-bottom-color: var(--accent-gold); color: var(--accent-gold); }
-.comparison-col p, .comparison-col li {
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--text-secondary);
-}
-.comparison-col ul {
-  list-style: none;
-  padding: 0;
-}
-.comparison-col li {
-  padding: 0.35rem 0;
-  padding-left: 1rem;
-  position: relative;
-}
-.comparison-col li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--text-tertiary);
-}
-
-/* ============================================
-   FOOTER
-   ============================================ */
-.site-footer {
-  background: var(--footer-bg);
-  color: var(--footer-text);
-  padding: 3.5rem 0 2rem;
-}
-.footer-section {
-  margin-bottom: 2.5rem;
-}
-.footer-section:last-child { margin-bottom: 0; }
-.footer-heading {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--footer-heading);
-  margin-bottom: 1rem;
-}
-.footer-section p {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: var(--footer-text);
-}
-.footer-sources {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.68rem;
-  line-height: 2;
-  letter-spacing: 0.01em; /* monospace compensation */
-  color: var(--footer-text);
-}
-.footer-colophon {
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #2A2A2A;
-  text-align: center;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.65rem;
-  color: #555;
-  letter-spacing: 0.04em;
-}
-
-/* ============================================
-   SCROLL ANIMATIONS
-   ============================================ */
-.reveal {
-  opacity: 0;
-  transform: translateY(18px);
-  transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-              transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Staggered children */
-.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0s; }
-.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.08s; }
-.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.16s; }
-.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.24s; }
-
-/* Reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-  html { scroll-behavior: auto; }
-}
-
-/* ============================================
-   RESPONSIVE — MOBILE FIRST
-   ============================================ */
-
-/* Small phones (320px+) — base styles above */
-
-/* Standard phones (375px+) */
-@media (min-width: 375px) {
-  .container { padding: 0 1.5rem; }
-  .stat-grid { gap: 1rem; }
-}
-
-/* Large phones (428px+) */
-@media (min-width: 428px) {
-  .profile-card {
-    grid-template-columns: 130px 1fr;
-  }
-}
-
-/* Tablets (768px+) */
-@media (min-width: 768px) {
-  .container { padding: 0 2rem; }
-  .section { padding: 5rem 0; }
-  .hero { padding: 8rem 0 5rem; }
-  .stat-grid { grid-template-columns: repeat(4, 1fr); }
-  .profile-cards { grid-template-columns: 1fr 1fr; }
-  .profile-card {
-    grid-template-columns: 100px 1fr; /* was 1fr stacked — horizontal card at tablet */
-    text-align: left;
-  }
-  .profile-photo {
-    width: 100px;
-    height: 125px;
-  }
-  .profile-detail strong { min-width: 0; }
-}
-
-/* Laptops (1024px+) */
-@media (min-width: 1024px) {
-  .container { max-width: 720px; }
-  .side-nav { display: flex; }
-  .mobile-nav-toggle { display: none !important; }
-  .back-to-top { display: none !important; }
-  .hero { min-height: 100vh; }
-}
-
-/* Desktops (1280px+) */
-@media (min-width: 1280px) {
-  .container { max-width: 760px; }
-  .side-nav { left: 2rem; }
-}
-
-/* Ultra-wide (1600px+) */
-@media (min-width: 1600px) {
-  .side-nav { left: calc((100vw - 760px) / 2 - 180px); }
-}
-
-/* Below 1024px — mobile nav */
-@media (max-width: 1023px) {
-  .mobile-nav-toggle { display: flex; }
-  .mobile-nav-drawer { display: block; }
-  .mobile-nav-overlay { display: block; }
-  .back-to-top { display: flex; }
-}
-
-/* Red flag table: card layout on mobile */
-@media (max-width: 600px) {
-  #red-flags .table-wrapper { border: none; }
-  #red-flags .table-wrapper table { min-width: 0; }
-  #red-flags .table-wrapper thead { display: none; }
-  #red-flags .table-wrapper tbody tr {
-    display: block;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border: 1px solid var(--card-border);
-    background: var(--card-bg);
-  }
-  #red-flags .table-wrapper tbody td {
-    display: block;
-    padding: 0.25rem 0;
-    border-bottom: none;
-    text-align: left;
-    font-size: 0.82rem;
-  }
-  #red-flags .table-wrapper tbody td::before {
-    content: attr(data-label);
-    display: block;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.62rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-tertiary);
-    margin-bottom: 0.15rem;
-  }
-  #red-flags .table-wrapper tbody td:first-child {
-    position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
-    padding: 0;
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;
-    font-size: 0.72rem;
-    color: var(--text-tertiary);
-  }
-  #red-flags .table-wrapper tbody td:first-child::before { display: none; }
-  #red-flags .table-wrapper tbody tr { position: relative; padding-right: 2.5rem; }
-}
-
-/* Very small screens (Galaxy Fold) */
-@media (max-width: 320px) {
-  .container { padding: 0 1rem; }
-  .stat-grid { grid-template-columns: 1fr; }
-  .comparison { grid-template-columns: 1fr; }
-  .profile-card { grid-template-columns: 1fr; }
-  .profile-photo { width: 100%; height: 120px; }
-  .hero h1 { font-size: 1.9rem; }
-}
-
-/* Comparison columns stack on small screens */
-@media (max-width: 600px) {
-  .comparison { grid-template-columns: 1fr; }
-  .comparison-col.for {
-    border-top: 2px solid var(--rule-light);
-    padding-top: 1.5rem;
-    margin-top: 0.5rem;
-  }
-}
-
-/* Safe area insets for notched phones */
-@supports (padding: max(0px)) {
-  .mobile-nav-drawer {
-    padding-bottom: max(2rem, env(safe-area-inset-bottom));
-  }
-  .mobile-nav-toggle {
-    bottom: max(1rem, env(safe-area-inset-bottom));
-  }
-  .back-to-top {
-    bottom: max(4.5rem, calc(env(safe-area-inset-bottom) + 3.5rem));
-  }
-}
-
-/* Landscape phone */
-@media (max-height: 500px) and (orientation: landscape) {
-  .hero { min-height: auto; padding: 3rem 0; }
-  .mobile-nav-drawer { max-height: 60vh; }
-}
-
-/* Print */
-@media print {
-  .progress-bar, .theme-toggle, .side-nav, .mobile-nav-toggle,
-  .mobile-nav-drawer, .mobile-nav-overlay, .back-to-top { display: none !important; }
-  body { background: #fff; color: #000; font-size: 11pt; }
-  .section { break-inside: avoid; page-break-inside: avoid; }
-  body::before { display: none; }
-}
-</style>
 </head>
 <body>
 
@@ -1441,13 +112,18 @@ blockquote cite {
 <!-- HERO -->
 <section class="hero section" id="hero">
 <div class="container">
-  <div class="hero-dateline reveal">An Investigative Report &middot; March 2026</div>
+  <div class="hero-dateline reveal">An Investigative Report &middot; September 2025</div>
   <h1 class="reveal">The Phantom Shares</h1>
   <p class="hero-subtitle reveal">How a Lehman Brothers Veteran Built a $578&nbsp;Million Fund on the Ashes of a $3&nbsp;Million Naked Short Selling Scandal</p>
   <p class="hero-subtitle-secondary reveal">&mdash; and Why His Investors May Not Know</p>
   <div class="hero-subject-line reveal">
     <strong>Subject:</strong> Michael Edward Bleich (CRD# 4262671), Chief Investment Officer, EntryPoint Capital, LLC<br>
     <strong>Entities:</strong> <a href="https://entrypointcap.com/" target="_blank" rel="noopener" title="EntryPoint Capital website">EntryPoint Capital</a> (CRD# 313946) &bull; <a href="https://files.brokercheck.finra.org/firm/firm_151990.pdf" target="_blank" rel="noopener" title="FINRA BrokerCheck — Scout Trading">Scout Trading</a> (CRD# 151990) &bull; Ophir Partners (CRD# 164729)
+  </div>
+  <div class="hero-scroll-cue reveal" aria-hidden="true">
+    <span class="hero-scroll-line"></span>
+    <span class="hero-scroll-label">scroll</span>
+    <span class="hero-scroll-arrow">&#8595;</span>
   </div>
 </div>
 </section>
@@ -1473,7 +149,6 @@ blockquote cite {
           <strong>CRD#</strong> 4262671<br>
           <strong>DOB</strong> c.&nbsp;1971<br>
           <strong>Education</strong> PhD, Theoretical Physics, Duke University (1997)<br>
-
           <strong>Career</strong> Lehman Brothers &rarr; Scout Trading &rarr; Ophir Partners &rarr; EntryPoint Capital
         </div>
         <div class="profile-highlight">
@@ -1484,9 +159,8 @@ blockquote cite {
 
     <!-- Alexis Profile -->
     <div class="profile-card reveal">
-      <div class="profile-photo">
-        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-        <span class="profile-photo-label">Insert Photo</span>
+      <div class="profile-photo profile-photo--image">
+        <img src="Alexis_Kaminsky_Bleich.PNG" alt="Alexis Kate Kaminsky Bleich — Licensed Clinical Social Worker, Co-Plaintiff" loading="lazy">
       </div>
       <div class="profile-info">
         <h3>Alexis Kate Kaminsky Bleich</h3>
@@ -1553,7 +227,7 @@ blockquote cite {
   <div class="section-dek reveal">Head of Liquidity Strategy for U.S. Equities. BATS board member. A physicist who learned how settlement systems worked — from the inside.</div>
 
   <div class="section-body">
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:0 0 1rem;font-weight:700;color:var(--text-primary);">Lehman Brothers, 2004–2008: Learning the Plumbing</h3>
+    <h3 class="section-subhead section-subhead--first">Lehman Brothers, 2004–2008: Learning the Plumbing</h3>
     <p class="reveal">Before Michael Bleich generated 295 million phantom shares, he learned how settlement systems worked from the inside. As Head of Liquidity Strategy for U.S. Equities at Lehman Brothers (2004–2008), he was responsible for algorithmic routing, dark pool utilization, and electronic execution — one of the most powerful positions in electronic trading. He championed Lehman's minority investment in <a href="https://www.sec.gov/files/rules/other/2008/34-57322_application.htm" target="_blank" rel="noopener" title="SEC — BATS Exchange application">BATS Trading</a>, the Electronic Communication Network that the SEC would later <a href="https://www.hbsslaw.com/sites/default/files/case-downloads/directedge_batsglobal/01.12.15_directedge_batsglobal_sec_order.pdf" target="_blank" rel="noopener" title="SEC order — Direct Edge/BATS Global">penalize $14 million</a> for creating <a href="https://www.hbsslaw.com/cases/direct-edgebats-global" target="_blank" rel="noopener" title="HBS Law — Direct Edge/BATS Global case">secretive order types disclosed selectively to elite high-frequency trading firms</a>.</p>
 
     <div class="evidence-box reveal">
@@ -1563,7 +237,7 @@ blockquote cite {
 
     <p class="reveal">He held a doctorate in theoretical physics from Duke University (1997). He had entered finance not through the traditional routes of investment banking or sales, but through the mathematics of market microstructure — the study of how orders move through electronic systems, how latency creates arbitrage, how settlement mechanics can be exploited by those who understand them precisely.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">April 2006 – September 2008: Respectability, Then Collapse</h3>
+    <h3 class="section-subhead">April 2006 – September 2008: Respectability, Then Collapse</h3>
     <p class="reveal">On April 8, 2006, he married Alexis Kate Kaminsky at the Palm House of the Brooklyn Botanic Garden. <a href="https://www.nytimes.com/2006/04/09/fashion/weddings/weddingscelebrations-alexis-kaminsky-michael-bleich.html" target="_blank" rel="noopener" title="NYT — Kaminsky-Bleich wedding announcement, April 9, 2006">The New York Times ran the announcement</a>. A year later, the couple purchased a Tribeca condominium for $3.6 million.</p>
 
     <p class="reveal">Then <a href="https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers" target="_blank" rel="noopener" title="Wikipedia — Bankruptcy of Lehman Brothers">Lehman Brothers collapsed</a>. And Bleich took what he had learned about the plumbing and built his own machine.</p>
@@ -1612,10 +286,10 @@ blockquote cite {
       <p><a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE Docket 12-0059</a> (January 2013) reveals what may be the most damning detail in the enforcement record. Scout Trading was fined $10,000 for failing on "numerous occasions" to provide and maintain two-sided 100-share quotes in its remote market-making assignment — a violation of CBOE Rule 53.23. Providing continuous two-sided liquidity is the defining obligation of a market maker. Scout was claiming market-maker privileges to obtain the T+6 settlement window while simultaneously failing to fulfill the only duty that justified those privileges. The CBOE's own enforcement record proves the exemption was fraudulently invoked.</p>
     </div>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The CBOE Trail: Three Fines, Three Dimensions of Failure</h3>
+    <h3 class="section-subhead">The CBOE Trail: Three Fines, Three Dimensions of Failure</h3>
     <p class="reveal">The <a href="https://www.cboe.com/" target="_blank" rel="noopener" title="Cboe Global Markets">CBOE</a> actions did not stop there. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 12-0099</a> (June 2013) found that Scout had failed to designate a Chief Compliance Officer or maintain registration records — a $7,500 fine for running a regulated entity with no designated compliance officer on record. <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">Docket 14-0018</a> (May 2014) imposed $5,000 for Regulation NMS trade-through violations. Three separate enforcement actions from a single exchange, each documenting a different dimension of the same operational posture: rules as obstacles to be circumvented, not constraints to be honored.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">April 7, 2015: The $3,000,000 Reckoning</h3>
+    <h3 class="section-subhead">April 7, 2015: The $3,000,000 Reckoning</h3>
     <p class="reveal">On April 7, 2015, <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading / Wedbush">FINRA censured Scout Trading and imposed a $3,000,000 fine</a> — the capstone of a two-year enforcement accumulation. Wedbush Securities, the clearing firm that processed Scout's orders without adequate oversight, would later pay $675,000 in its own penalties.</p>
 
     <div class="table-wrapper reveal">
@@ -1689,10 +363,10 @@ blockquote cite {
       </ol>
     </nav>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">2017–2020: The Interlude at Inferent Capital</h3>
+    <h3 class="section-subhead">2017–2020: The Interlude at Inferent Capital</h3>
     <p class="reveal">Between the dissolution of Ophir Partners and the formation of EntryPoint Capital, the record shows Bleich at Inferent Capital (2017–2020) as a Research Team Lead in machine learning and quantitative research — a transitional role at a firm he did not own. The interlude matters less for what Bleich did there than for what was happening in the background: the disclosure clock on his predecessor entities was running down. By the time EntryPoint Capital filed its first Form ADV, the dissolved firms were receding into archival obscurity — findable only by a searcher who already knew to look.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The Mechanism: CRD 313946 Returns Clean</h3>
+    <h3 class="section-subhead">The Mechanism: CRD 313946 Returns Clean</h3>
     <p class="reveal">The sequence matters because of what it accomplishes. Each time an entity carrying enforcement baggage is dissolved and a new entity is formed with a clean CRD number, the standard <a href="https://brokercheck.finra.org/" target="_blank" rel="noopener" title="FINRA BrokerCheck">FINRA BrokerCheck</a> and SEC IAPD searches run against the new number. The regulatory history does not transfer. The disclosure clock resets.</p>
 
     <div class="evidence-box reveal">
@@ -1716,12 +390,12 @@ blockquote cite {
   <div class="section-dek reveal">Form ADV Item 11: zero entries. The question the SEC's Division of Examinations is positioned to resolve.</div>
 
   <div class="section-body">
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:0 0 1rem;font-weight:700;color:var(--text-primary);">Item 11: The Blank Page</h3>
+    <h3 class="section-subhead section-subhead--first">Item 11: The Blank Page</h3>
     <p class="reveal">EntryPoint Capital's Form ADV identifies Michael Bleich as a control person through his indirect ownership via EntryPoint Partners, LP. The same Form ADV contains zero Item 11 disclosures — the section where disciplinary history, regulatory actions, and material legal proceedings involving the adviser or its control persons are catalogued.</p>
 
     <p class="reveal">The $3 million FINRA fine was levied against an entity Bleich founded and controlled. Whether the entity dissolution pattern creates a technical basis for non-disclosure — or whether Item 11 requires disclosure of a control person's regulatory history at predecessor entities — is a question the SEC's Division of Examinations is positioned to resolve. What is not in question is the information asymmetry: pension funds, endowments, and family offices allocating capital to EntryPoint's Third Moment strategy are making decisions without access to the complete enforcement record of the individual who controls their capital.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">$578M AUM: What's Visible and What's Not</h3>
+    <h3 class="section-subhead">$578M AUM: What's Visible and What's Not</h3>
     <div class="evidence-box reveal">
       <div class="evidence-box-title">Evidence: Capital Structure Breakdown</div>
       <p>$578,038,743 in regulatory assets under management. $256,342,753 in 13F-reportable equity holdings. The difference — $321,695,990 — sits in instruments not subject to position-level public disclosure: cash, short positions, fixed income, OTC derivatives, and the offshore Cayman capital. That non-reportable component represents 55.6 percent of the total fund.</p>
@@ -1734,17 +408,17 @@ blockquote cite {
       <div class="aq-cell"><div class="aq-number">$256.3M</div><div class="aq-label">Q4 2025</div></div>
     </div>
 
-    <div class="enforcement-total reveal" style="border-color:var(--rule-light);">
-      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--text-primary);">$325.6M</div><div class="et-label">U.S. Persons (56.4%)</div></div>
-      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--text-primary);">$252.4M</div><div class="et-label">Non-U.S. Persons (43.6%)</div></div>
-      <div class="et-cell" style="background:var(--card-bg);"><div class="et-number" style="color:var(--mono-color);">639</div><div class="et-label">Equity Positions</div></div>
+    <div class="enforcement-total enforcement-total--neutral reveal">
+      <div class="et-cell"><div class="et-number">$325.6M</div><div class="et-label">U.S. Persons (56.4%)</div></div>
+      <div class="et-cell"><div class="et-number">$252.4M</div><div class="et-label">Non-U.S. Persons (43.6%)</div></div>
+      <div class="et-cell"><div class="et-number et-number--mono">639</div><div class="et-label">Equity Positions</div></div>
     </div>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">The Cayman Master-Feeder: Standard Structure, Elevated Proportion</h3>
+    <h3 class="section-subhead">The Cayman Master-Feeder: Standard Structure, Elevated Proportion</h3>
     <p class="reveal">The Cayman component flows through a standard master-feeder architecture — three vehicles, two jurisdictions, one master fund where all capital commingles:</p>
 
-    <div class="arch-table reveal" style="overflow-x:auto;">
-      <table style="min-width:520px;">
+    <div class="arch-table reveal">
+      <table>
         <thead>
           <tr><th scope="col">Vehicle</th><th scope="col">Domicile</th><th scope="col">Type</th><th scope="col">Investors</th><th scope="col">Exemption</th></tr>
         </thead>
@@ -1758,7 +432,7 @@ blockquote cite {
 
     <p class="reveal">Cayman master-feeder structures are standard institutional architecture. Bridgewater, Citadel, and Two Sigma deploy identical frameworks. The structure alone is not notable. The proportion is. Among funds of comparable size and strategy type, a non-reportable ratio exceeding 50 percent is elevated. It does not imply wrongdoing. But for a fund whose owner has a documented history of operating at the boundaries of regulatory disclosure, the opacity takes on a contextual weight it would not carry elsewhere.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">4.73% vs. 22.1%: The Performance Question</h3>
+    <h3 class="section-subhead">4.73% vs. 22.1%: The Performance Question</h3>
     <p class="reveal"><strong class="mono-num">4.73 percent.</strong> That is EntryPoint's three-year annualized return on its 13F equity portfolio (Q4 2022–Q4 2025), with a Q4 2025 incremental return of just 0.27 percent. The S&P 500 returned 22.1 percent over the same period — a gap of 17.37 percentage points annually. The 13F portfolio captures only the reportable equity sleeve, roughly half the fund; the non-reportable components may perform differently. But for the visible portion of a $578 million fund charging institutional fees on a Cayman master-feeder structure, the numbers ask a question the governance architecture cannot answer.</p>
   </div>
 </div>
@@ -1784,7 +458,7 @@ blockquote cite {
       <p>When Jose Marques departed EntryPoint in February 2022 to become CEO of Intech Investment Management, Leibowitz assumed the EntryPoint CEO role. Leibowitz was subsequently appointed to Intech's board — the firm where his predecessor now leads. Reciprocal governance arrangements are common in institutional finance, but they invite scrutiny at any firm where the separation of economic interest from operational authority is already a live issue.</p>
     </div>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">Andrew Alkon: One Person, Three Control Functions</h3>
+    <h3 class="section-subhead">Andrew Alkon: One Person, Three Control Functions</h3>
     <p class="reveal">One additional structural detail warrants examination. EntryPoint's Form ADV identifies Andrew Alkon as simultaneously holding the roles of Chief Compliance Officer, Chief Operating Officer, and Chief Financial Officer. At a $578 million fund, the compliance function exists to provide independent oversight of operations and finance — the very functions Alkon also runs. The three-role concentration eliminates the structural independence that compliance is designed to provide. For a firm whose founder built and operated Scout Trading with zero written supervisory procedures, the design choice is familiar.</p>
 
     <div class="evidence-box reveal">
@@ -1833,9 +507,9 @@ blockquote cite {
   <div class="section-body">
     <p class="reveal"><strong class="mono-num">$198,877.50.</strong> That is the anti-SLAPP fee sanction entered against the client of Robert A. Giacovas in <em>Medifast v. Minkow</em> (S.D. Cal. 3:10-cv-00382) — the cost of defending against claims a federal court found were built on fabricated quotes. Judge Janis Sammartino ruled that Giacovas "paraphrased statements seemingly for maximum shock value." The court granted the defendants' anti-SLAPP motions and dismissed all claims. After the ruling, forensic accountant Tracy Coenen documented 26 specific instances of false statements in Giacovas's appellate briefs.</p>
 
-    <p class="reveal">Giacovas is Michael Bleich's lead litigator. He represents the Bleiches in their current property dispute (Index No. 155721/2024) through his firm, Lazare Potter Giacovas & Moyle LLP. In February 2026, the New Jersey Lawyers' Fund for Client Protection confirmed him ineligible for pro hac vice admission.</p>
+    <p class="reveal">Giacovas is Michael Bleich's lead litigator. He represents the Bleiches in their current property dispute (Index No. 155721/2024) through his firm, Lazare Potter Giacovas &amp; Moyle LLP. In February 2026, the New Jersey Lawyers' Fund for Client Protection confirmed him ineligible for pro hac vice admission.</p>
 
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.15rem;margin:2rem 0 1rem;font-weight:700;color:var(--text-primary);">Lynn Ellen Judell: Suspended Since July 2024, Still Filing in June 2024</h3>
+    <h3 class="section-subhead">Lynn Ellen Judell: Suspended Since July 2024, Still Filing in June 2024</h3>
     <p class="reveal">His co-counsel is Lynn Ellen Judell of Rukab Brash PLLC (California Bar #114924). Judell's California Bar license has been suspended since July 2, 2024. The State Bar has issued a formal Consumer Alert regarding her status. She carries a prior 2006 administrative suspension. She appeared as co-counsel on the June 21, 2024 memorandum of law in Bleich's preliminary injunction motion — eleven days before her suspension became effective. She is also listed on the New Jersey PHV ineligibility list.</p>
 
     <div class="evidence-box reveal">
@@ -1884,7 +558,7 @@ blockquote cite {
         <tr><td data-label="#">9</td><td data-label="Red Flag">$2.2M personal default on predecessor entity debt (OPEH)</td><td data-label="Severity"><span class="severity severity-high">High</span></td><td data-label="Source"><a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener">NYSCEF 654791/2018</a></td></tr>
         <tr><td data-label="#">10</td><td data-label="Red Flag">Lead litigation counsel declared PHV-ineligible (Giacovas)</td><td data-label="Severity"><span class="severity severity-high">High</span></td><td data-label="Source">NJ Lawyers' Fund</td></tr>
         <tr><td data-label="#">11</td><td data-label="Red Flag">Co-counsel suspended from California Bar (Judell)</td><td data-label="Severity"><span class="severity severity-high">High</span></td><td data-label="Source">CA State Bar #114924</td></tr>
-        <tr><td data-label="#">12</td><td data-label="Red Flag">4.73% 3-year return vs 22.1% S&P 500 benchmark</td><td data-label="Severity"><span class="severity severity-moderate">Moderate</span></td><td data-label="Source">SEC EDGAR 13F</td></tr>
+        <tr><td data-label="#">12</td><td data-label="Red Flag">4.73% 3-year return vs 22.1% S&amp;P 500 benchmark</td><td data-label="Severity"><span class="severity severity-moderate">Moderate</span></td><td data-label="Source">SEC EDGAR 13F</td></tr>
         <tr><td data-label="#">13</td><td data-label="Red Flag">Scout Trading personnel retained at EntryPoint (33% of team)</td><td data-label="Severity"><span class="severity severity-moderate">Moderate</span></td><td data-label="Source">Form ADV</td></tr>
         <tr><td data-label="#">14</td><td data-label="Red Flag">Key service providers (auditor, prime broker, counsel) unconfirmed</td><td data-label="Severity"><span class="severity severity-moderate">Moderate</span></td><td data-label="Source">Form ADV gap</td></tr>
         <tr><td data-label="#">15</td><td data-label="Red Flag">CCO, COO, and CFO roles held by single individual (Andrew Alkon) — compliance independence eliminated</td><td data-label="Severity"><span class="severity severity-high">High</span></td><td data-label="Source">Form ADV</td></tr>
@@ -1918,14 +592,14 @@ blockquote cite {
         <li>CCO, COO, and CFO roles concentrated in a single individual — compliance independence structurally eliminated</li>
         <li>A $2,233,007 personal default arising from predecessor entity debt</li>
         <li>Litigation counsel with judicial finding of fabricated quotes and a suspended bar license</li>
-        <li>A 17.37-percentage-point annual performance gap against the S&P 500</li>
+        <li>A 17.37-percentage-point annual performance gap against the S&amp;P 500</li>
       </ul>
     </div>
     <div class="comparison-col for">
       <h4>The Case For</h4>
       <ul>
         <li>Ten years without a new regulatory action at the entity level</li>
-        <li>Independent NAV verification through SS&C Technologies</li>
+        <li>Independent NAV verification through SS&amp;C Technologies</li>
         <li>A CEO whose institutional pedigree — NYSE Euronext COO, UBS Managing Director — is genuine</li>
         <li>An experienced team including Deputy CIO Sidney Browne</li>
         <li>A Cayman master-feeder structure that is industry-standard for funds of this size</li>
@@ -1935,7 +609,7 @@ blockquote cite {
   </div>
 
   <div class="section-body">
-    <h3 style="font-family:'Playfair Display',serif;font-size:1.3rem;margin:2rem 0 1rem;font-weight:700;">The Gap</h3>
+    <h3 class="section-subhead section-subhead--lg">The Gap</h3>
 
     <p class="reveal">Standard entity-level CRD screening of EntryPoint Capital (CRD# 313946) would not have surfaced the $3,000,000 FINRA enforcement action against Scout Trading (CRD# 151990). It would not have identified the four-entity dissolution sequence. It would not have revealed the $2,233,007 OPEH default, the 55.6 percent non-reportable capital ratio, or the licensing status of the firm's litigation counsel. Each of these findings required searches that began with Bleich the individual — not EntryPoint the firm — and then traced backward through predecessor CRD numbers, NYSCEF court indices, state bar records, and CBOE docket archives.</p>
 
@@ -1989,8 +663,14 @@ blockquote cite {
     <div class="footer-heading">Legal Notice</div>
     <p>All rights reserved. This report is intended for due diligence and investigative journalism purposes. Publication or distribution should be reviewed by legal counsel.</p>
   </div>
+
   <div class="footer-colophon">
-    An Investigative Report &middot; March 2026
+    <span class="footer-colophon-rule"></span>
+    <div class="footer-colophon-center">
+      <span class="footer-colophon-mark">The Phantom Shares</span>
+      <span class="footer-colophon-meta">An Investigative Report &middot; September 2025</span>
+    </div>
+    <span class="footer-colophon-rule"></span>
   </div>
 </div>
 </footer>
@@ -2015,7 +695,6 @@ blockquote cite {
     iconMoon.style.display = theme === 'dark' ? 'none' : 'block';
   }
 
-  // Init theme
   let saved;
   try { saved = localStorage.getItem('theme'); } catch(e) {}
   if (saved) {
@@ -2081,7 +760,6 @@ blockquote cite {
     sections.forEach(function(s) { sectionObserver.observe(s); });
   }
 
-  // Show/hide side nav after hero
   function updateSideNavVisibility() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     if (scrollTop > window.innerHeight * 0.5) {
@@ -2101,7 +779,6 @@ blockquote cite {
     mobileOverlay.classList.add('open');
     mobileToggle.setAttribute('aria-expanded', 'true');
     document.body.style.overflow = 'hidden';
-    // Focus first link in drawer for keyboard accessibility
     var firstLink = mobileDrawer.querySelector('a');
     if (firstLink) setTimeout(function() { firstLink.focus(); }, 100);
   }
@@ -2118,7 +795,6 @@ blockquote cite {
     link.addEventListener('click', closeMobileNav);
   });
 
-  // ---- FIX I2: ESC key closes mobile drawer ----
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
       closeMobileNav();
@@ -2126,7 +802,6 @@ blockquote cite {
     }
   });
 
-  // ---- FIX I1: Focus trap within mobile drawer ----
   mobileDrawer.addEventListener('keydown', function(e) {
     if (e.key !== 'Tab') return;
     var focusable = mobileDrawer.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])');
@@ -2168,7 +843,6 @@ blockquote cite {
     }
   }, { passive: true });
 
-  // Initial calls
   updateProgress();
   updateSideNavVisibility();
   updateBackToTop();
