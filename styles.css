@@ -769,18 +769,20 @@ h3, h4 { font-weight: 700; }
 }
 .profile-card {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 1.25rem;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
   padding: 1.5rem;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   box-shadow: var(--card-shadow);
+  align-items: start;
 }
 .profile-photo {
-  width: 120px;
-  height: 150px;
+  width: 140px;
+  height: 175px;
   background: var(--photo-placeholder-bg);
   border: 1px dashed var(--photo-placeholder-border);
+  border-radius: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -790,6 +792,7 @@ h3, h4 { font-weight: 700; }
 .profile-photo--image {
   background: none;
   border: 1px solid var(--card-border);
+  border-radius: 2px;
   overflow: hidden;
   padding: 0;
 }
@@ -824,10 +827,11 @@ h3, h4 { font-weight: 700; }
 }
 .profile-info h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 0.35rem;
   line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 .profile-role {
   font-family: 'Source Serif 4', serif;
@@ -858,6 +862,21 @@ h3, h4 { font-weight: 700; }
   font-weight: 600;
   color: var(--accent-red);
   line-height: 1.6;
+}
+.profile-highlight-item {
+  display: inline;
+}
+.profile-highlight-item + .profile-highlight-item::before {
+  content: ' \00B7\0020';
+}
+@media (max-width: 600px) {
+  .profile-highlight-item {
+    display: block;
+    padding: 0.2rem 0;
+  }
+  .profile-highlight-item + .profile-highlight-item::before {
+    content: none;
+  }
 }
 
 /* ============================================
@@ -1281,7 +1300,7 @@ blockquote cite {
 }
 
 @media (min-width: 428px) {
-  .profile-card { grid-template-columns: 130px 1fr; }
+  .profile-card { grid-template-columns: 140px 1fr; }
 }
 
 @media (min-width: 768px) {
@@ -1291,12 +1310,12 @@ blockquote cite {
   .stat-grid { grid-template-columns: repeat(4, 1fr); }
   .profile-cards { grid-template-columns: 1fr 1fr; }
   .profile-card {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 130px 1fr;
     text-align: left;
   }
   .profile-photo {
-    width: 100px;
-    height: 125px;
+    width: 130px;
+    height: 162px;
   }
   .profile-detail strong { min-width: 0; }
 }
@@ -1384,7 +1403,7 @@ blockquote cite {
   .stat-grid { grid-template-columns: 1fr; }
   .comparison { grid-template-columns: 1fr; }
   .profile-card { grid-template-columns: 1fr; }
-  .profile-photo { width: 100%; height: 120px; }
+  .profile-photo { width: 100%; height: 180px; }
   .hero h1 { font-size: 1.9rem; }
 }
 
