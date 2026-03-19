@@ -76,6 +76,80 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+/* ============================================
+   PROFILE CARD REFINEMENTS — Layout Overrides
+   ============================================ */
+
+/* 1. Top-align photo and content; increase photo for better proportion */
+.profile-card {
+  align-items: start;
+  grid-template-columns: 140px 1fr;
+  gap: 1.5rem;
+}
+.profile-photo {
+  width: 140px;
+  height: 175px;
+  border-radius: 2px;
+}
+.profile-photo--image {
+  border-radius: 2px;
+}
+
+/* 2. Name: heavier weight, slightly larger, tighter tracking */
+.profile-info h3 {
+  font-weight: 900;
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.35rem;
+}
+
+/* 3. Profile highlight: stack items vertically on small screens */
+.profile-highlight-item {
+  display: inline;
+}
+.profile-highlight-item + .profile-highlight-item::before {
+  content: ' \00B7\0020'; /* middot separator inline */
+}
+@media (max-width: 600px) {
+  .profile-highlight-item {
+    display: block;
+    padding: 0.2rem 0;
+  }
+  .profile-highlight-item + .profile-highlight-item::before {
+    content: none;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) {
+  .profile-card {
+    grid-template-columns: 130px 1fr;
+  }
+  .profile-photo {
+    width: 130px;
+    height: 162px;
+  }
+}
+
+/* Large phones */
+@media (min-width: 428px) and (max-width: 767px) {
+  .profile-card {
+    grid-template-columns: 140px 1fr;
+  }
+}
+
+/* Very small screens — stack */
+@media (max-width: 320px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+  .profile-photo {
+    width: 100%;
+    height: 180px;
+  }
+}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -234,7 +308,7 @@
           <strong>Career</strong> Lehman Brothers &rarr; Scout Trading &rarr; Ophir Partners &rarr; EntryPoint Capital
         </div>
         <div class="profile-highlight">
-          $3,000,000 in <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading">FINRA penalties</a> &bull; Three <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE fines</a> &bull; $2.2M <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH default</a>
+          <span class="profile-highlight-item">$3,000,000 in <a href="https://www.finra.org/media-center/news-releases/2016/finra-and-nasdaq-fine-wedbush-securities-inc-675000-supervisory" target="_blank" rel="noopener" title="FINRA Press Release — Scout Trading">FINRA penalties</a></span><span class="profile-highlight-item">Three <a href="https://www.cboe.com/us/options/regulation/disciplinary_actions/" target="_blank" rel="noopener" title="CBOE Disciplinary Actions">CBOE fines</a></span><span class="profile-highlight-item">$2.2M <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH default</a></span>
         </div>
       </div>
     </div>
@@ -254,7 +328,7 @@
           <strong>Writing</strong> <a href="https://www.momsrising.org/blog/users/alexis-bleich" target="_blank" rel="noopener" title="MomsRising — Alexis Bleich contributor profile">MomsRising Education Fund</a>
         </div>
         <div class="profile-highlight">
-          Co-signatory on $2,233,007 <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH LLC promissory note</a> &bull; Co-plaintiff in pending condo litigation (Index No. 155721/2024)
+          <span class="profile-highlight-item">Co-signatory on $2,233,007 <a href="https://iapps.courts.state.ny.us/nyscef/HomePage" target="_blank" rel="noopener" title="NYSCEF — Index No. 654791/2018">OPEH LLC promissory note</a></span><span class="profile-highlight-item">Co-plaintiff in pending condo litigation (Index No. 155721/2024)</span>
         </div>
       </div>
     </div>
